@@ -33,7 +33,7 @@
         $servidor = "localhost";
         $usuario = "myhvirtual";
         $contraseña = "uPLtaPntlDJnThpf";
-        $nombre_base_de_datos = "systems";
+        $nombre_base_de_datos = "myhvirtual";
 
         // Crea la conexión
         $conn = new mysqli($servidor, $usuario, $contraseña, $nombre_base_de_datos);
@@ -59,7 +59,7 @@
                     $row["Icon"] .
                     "</td><td>" .
                     $row["Description"] .
-                    "</td></tr>" .
+                    "</td><td>".
                     $row["Url"] .
                     "</td></tr>";
             }
