@@ -9,10 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/mainmenu.css">
 </head>
-<body>
-
-    <p>Para comenzar selecciona una región</p>
-    
+<body>  
 <div class="container">
     <div class="row">
         <?php
@@ -43,14 +40,18 @@
                 echo '<p class="card-text">Descripción general.</p>';
                 echo '<a href="region/' . $row["Url"] . '.php" class="btn btn-primary">Iniciar</a>';
                 echo "</div>";
-                echo "</div>";*/
-                
-                echo '<div class="carousel-item">';
-                echo '<img src="icons/main/'.$row["Icon"].'" alt="Dog" title="Dog"/>';
-                echo '<h3>'.$row["System"].'<br/><a class="waves-effect waves-light btn btn-large light-blue accent-2" href="region/' . $row["Url"] . '.php" width="100%">Seleccionar</a></h3>';
-                echo '</div>';
+                echo "</div>"; */
+
+                echo '<div class="carousel-item" style="background-image: url(icons/main/' . $row["Icon"] . ');">';
+                // echo '<img src="icons/main/'.$row["Icon"].'" title="'.$row["System"].'"/>';
+                echo "<h3>" .
+                    $row["System"] .
+                    '<br/><a class="waves-effect waves-light btn btn-large light-blue accent-2" href="region/' .
+                    $row["Url"] .
+                    '.php" width="100%">Explorar</a></h3>';
+                echo "</div>";
             }
-            echo '</div>';
+            echo "</div>";
         } else {
             echo "0 resultados";
         }
@@ -67,6 +68,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./js/mainmenu.js"></script>
+
 
 </body>
 </html>
