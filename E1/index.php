@@ -46,9 +46,9 @@
                 // echo '<img src="icons/main/'.$row["Icon"].'" title="'.$row["System"].'"/>';
                 echo "<h3>" .
                     $row["System"] .
-                    '<br/><a class="waves-effect waves-light btn btn-large light-blue accent-2" href="region/' .
+                    '<br/><a class="waves-effect waves-light btn btn-large light-blue accent-2" href="region/html/' .
                     $row["Url"] .
-                    '.php" width="100%">Explorar</a></h3>';
+                    '.html" width="100%">Explorar</a></h3>';
                 echo "</div>";
             }
             echo "</div>";
