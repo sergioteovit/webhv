@@ -33,22 +33,14 @@
         if ($result->num_rows > 0) {
             echo '<div class="carousel">';
             while ($row = $result->fetch_assoc()) {
-                /* echo '<div class="card col-12 col-sm-6 col-md-3 mb-3">';
-                echo '<img src="icons/main/' . $row["Icon"] . '" class="card-img-top bg-info icon-btn" alt="...">';
-                echo '<div class="card-body">';
-                echo '<h5 class="card-title">' . $row["System"] . "</h5>";
-                echo '<p class="card-text">Descripción general.</p>';
-                echo '<a href="region/' . $row["Url"] . '.php" class="btn btn-primary">Iniciar</a>';
-                echo "</div>";
-                echo "</div>"; */
 
                 echo '<div class="carousel-item" style="background-image: url(icons/main/' . $row["Icon"] . ');">';
-                // echo '<img src="icons/main/'.$row["Icon"].'" title="'.$row["System"].'"/>';
+                
                 echo "<h3>" .
                     $row["System"] .
-                    '<br/><a class="waves-effect waves-light btn btn-large light-blue accent-2" href="region/html/' .
-                    $row["Url"] .
-                    '.html" width="100%">Explorar</a></h3>';
+                    '<br/><a class="waves-effect waves-light btn btn-large light-blue accent-2" href="region/php/levels.php?url='.
+                    $row["Url"]
+                    .'" width="100%">Explorar</a></h3>';
                 echo "</div>";
             }
             echo "</div>";

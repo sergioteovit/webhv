@@ -1,5 +1,5 @@
-$.getJSON( "tegumentario.json", function( json ) {
-    // document.getElementById("system_title").innerHTML = json.name;
+$.getJSON( "json/" + document.title + ".json", function( json ) {
+    document.getElementById("system_title").innerHTML = json.name;
   
     json.levels.forEach(function(level, index) {
       if ( (index+1) % 2 != 0 ){

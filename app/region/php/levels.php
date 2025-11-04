@@ -2,7 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Selección de niveles</title>
+    <title>
+    <?php if (isset($_GET["url"])) {
+      $url = $_GET["url"];
+
+      echo $url;
+    } else {
+      echo "Selection failed";
+    } ?>
+    </title>
     <link rel="stylesheet" href="https://rawcdn.githack.com/SochavaAG/example-mycode/master/_common/css/reset.css" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" href="#" />
@@ -11,7 +19,7 @@
   <body>
     <div class="ag-timeline-block">
       <div class="ag-timeline_title-box">
-        <div class="ag-timeline_title" id="system_title">Sistema Tegumentario</div>
+        <div class="ag-timeline_title" id="system_title"></div>
         <div class="ag-timeline_tagline">Desplazate hacia abajo para seleccionar el caso</div>
       </div>
       <section class="ag-section">

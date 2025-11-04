@@ -1,5 +1,5 @@
 {
-    "name": "Sistema Tegumentario",
+    "name": "Sistema Respiratorio",
     "levels": [
         {
             "name": "Caso 1",
@@ -9,7 +9,8 @@
                 "Bioquímica"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 2",
@@ -19,7 +20,8 @@
                 "Bioquímica"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 3",
@@ -29,7 +31,8 @@
                 "Bioquímica"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 4",
@@ -39,7 +42,8 @@
                 "Bioquímica"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 5",
@@ -49,7 +53,8 @@
                 "Bioquímica"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 6",
@@ -59,7 +64,8 @@
                 "Bioquímica"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 7",
@@ -69,7 +75,8 @@
                 "Bioquímica"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 8",
@@ -79,7 +86,8 @@
                 "Bioquímica"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 9",
@@ -89,7 +97,8 @@
                 "Bioquímica"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 10",
@@ -99,7 +108,8 @@
                 "Bioquímica"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 11",
@@ -109,7 +119,8 @@
                 "Bioquímica"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 12",
@@ -119,7 +130,8 @@
                 "Bioquímica"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 13",
@@ -129,7 +141,8 @@
                 "Bioquímica"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 14",
@@ -139,7 +152,8 @@
                 "Bioquímica"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 15",
@@ -149,7 +163,8 @@
                 "Bioquímica"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 16",
@@ -160,7 +175,8 @@
 		        "Anatomía"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 17",
@@ -171,7 +187,8 @@
 		        "Anatomía"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 18",
@@ -182,7 +199,8 @@
 		        "Anatomía"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 19",
@@ -193,7 +211,8 @@
 		        "Anatomía"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 20",
@@ -204,7 +223,8 @@
 		        "Anatomía"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 21",
@@ -215,7 +235,8 @@
 		        "Anatomía"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 22",
@@ -226,7 +247,8 @@
 		        "Anatomía"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 23",
@@ -237,7 +259,8 @@
 		        "Anatomía"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 24",
@@ -248,7 +271,8 @@
 		        "Anatomía"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 25",
@@ -259,7 +283,8 @@
 		        "Anatomía"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 26",
@@ -270,7 +295,8 @@
 		        "Anatomía"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 27",
@@ -281,7 +307,8 @@
 		        "Anatomía"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 28",
@@ -292,7 +319,8 @@
 		        "Anatomía"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 29",
@@ -303,7 +331,8 @@
 		        "Anatomía"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 30",
@@ -314,7 +343,8 @@
 		        "Anatomía"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 31",
@@ -326,7 +356,8 @@
                 "Fisiología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 32",
@@ -338,7 +369,8 @@
                 "Fisiología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 33",
@@ -350,7 +382,8 @@
                 "Fisiología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 34",
@@ -362,7 +395,8 @@
                 "Fisiología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 35",
@@ -374,7 +408,8 @@
                 "Fisiología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 36",
@@ -386,7 +421,8 @@
                 "Fisiología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 37",
@@ -398,7 +434,8 @@
                 "Fisiología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 38",
@@ -410,7 +447,8 @@
                 "Fisiología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 39",
@@ -422,7 +460,8 @@
                 "Fisiología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 40",
@@ -434,7 +473,8 @@
                 "Fisiología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 41",
@@ -446,7 +486,8 @@
                 "Fisiología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 42",
@@ -458,7 +499,8 @@
                 "Fisiología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 43",
@@ -470,7 +512,8 @@
                 "Fisiología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 44",
@@ -482,7 +525,8 @@
                 "Fisiología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 45",
@@ -494,7 +538,8 @@
                 "Fisiología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 46",
@@ -507,7 +552,8 @@
                 "Farmacología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 47",
@@ -520,7 +566,8 @@
                 "Farmacología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 48",
@@ -533,7 +580,8 @@
                 "Farmacología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 49",
@@ -546,7 +594,8 @@
                 "Farmacología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 50",
@@ -559,7 +608,8 @@
                 "Farmacología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 51",
@@ -572,7 +622,8 @@
                 "Farmacología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 52",
@@ -585,7 +636,8 @@
                 "Farmacología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 53",
@@ -598,7 +650,8 @@
                 "Farmacología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 54",
@@ -611,7 +664,8 @@
                 "Farmacología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 55",
@@ -624,7 +678,8 @@
                 "Farmacología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 56",
@@ -637,7 +692,8 @@
                 "Farmacología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 57",
@@ -650,7 +706,8 @@
                 "Farmacología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 58",
@@ -663,7 +720,8 @@
                 "Farmacología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 59",
@@ -676,7 +734,8 @@
                 "Farmacología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         },
         {
             "name": "Caso 60",
@@ -689,7 +748,8 @@
                 "Farmacología"
             ],
             "image": "images/caso.png",
-            "brief": "Paciente se presenta al área de consultorio..."
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "casos/"
         }
     ]
 }
