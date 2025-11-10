@@ -28,7 +28,8 @@
                 "GLTFLoader": "https://threejs.org/examples/jsm/loaders/GLTFLoader.js",
                 "PointerLockControls": "https://threejs.org/examples/jsm/controls/PointerLockControls.js",
                 "HDRLoader":"https://threejs.org/examples/jsm/loaders/HDRLoader.js",
-                "RGBELoader":"https://threejs.org/examples/jsm/loaders/RGBELoader.js"
+                "RGBELoader":"https://threejs.org/examples/jsm/loaders/RGBELoader.js",
+                "OrbitControls":"https://threejs.org/examples/jsm/controls/OrbitControls.js"
             }
         }
     </script>

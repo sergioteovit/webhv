@@ -5,6 +5,8 @@ import { HDRLoader } from "HDRLoader";
 
 import { RGBELoader } from "RGBELoader";
 
+import { OrbitControls } from "OrbitControls";
+
 let camera, scene, renderer, controls;
 let avatar;
 let clock = new THREE.Clock();
@@ -30,6 +32,7 @@ function init() {
 
     // Cámara
     camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.set( 0, 1.3, 2 );
     // La posición inicial de la cámara ya no es importante, se actualizará en cada frame
 
     // Renderizador
@@ -53,10 +56,15 @@ function init() {
 
     // Controles de puntero (FPS)
     // Se seguirá usando, pero el movimiento se aplicará al avatar
-    controls = new PointerLockControls(camera, document.body);
+    /* controls = new PointerLockControls(camera, document.body);
     document.body.addEventListener("click", () => {
         controls.lock();
-    });
+    }); */
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.enablePan = false;
+    controls.enableZoom = true;
+    controls.target.set(0, 1.3, 0);
+    controls.update();
 
     loadHDR();
 
@@ -64,7 +72,7 @@ function init() {
     loadAvatar();
 
     // Maneja los eventos del teclado
-    setupKeyboardControls();
+    // setupKeyboardControls();
 
     // Maneja el redimensionamiento de la ventana
     window.addEventListener("resize", onWindowResize);
@@ -75,14 +83,14 @@ function init() {
 
 //
 function loadHDR() {
-    const rgbeLoader = new RGBELoader();
-    rgbeLoader.load("hdr/kart_club_2k.hdr", (texture) => {
+    const rgbeLoader = new HDRLoader();
+    rgbeLoader.load("hdr/qwantani_morning_puresky_2k.hdr", (texture) => {
         // Code to execute after the HDR texture is loaded
         texture.mapping = THREE.EquirectangularReflectionMapping;
         scene.background = texture;
         scene.environment = texture;
     });
-    
+
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.0; // Adjust as needed
     renderer.outputEncoding = THREE.sRGBEncoding;
@@ -136,6 +144,7 @@ function loadAvatar() {
 }
 
 // Configura las teclas de movimiento
+/*
 function setupKeyboardControls() {
     document.addEventListener("keydown", (event) => {
         switch (event.code) {
@@ -186,7 +195,7 @@ function setupKeyboardControls() {
                 break;
         }
     });
-}
+}*/
 
 // Bucle de animación
 function animate() {
@@ -197,6 +206,7 @@ function animate() {
         mixer.update(delta);
     }
 
+    /*
     if (controls.isLocked) {
         if (avatar) {
             // const delta = clock.getDelta();
@@ -234,7 +244,7 @@ function animate() {
                 avatar.position.z + forwardVector.z
             );
         }
-    }
+    }*/
 
     renderer.render(scene, camera);
 }
