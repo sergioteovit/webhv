@@ -1,0 +1,27 @@
+<scene name='ARQ-54'>
+    <object name='TLAMP' x='-1.5000' y='0.0000' z='0.0000' rx='0.0000' ry='0.0000' rz='90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='TLAMP' x='-0.3000' y='0.0000' z='0.0000' rx='0.0000' ry='0.0000' rz='90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='TLAMP' x='1.5500' y='0.6000' z='0.0000' rx='0.0000' ry='0.0000' rz='0.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='TLAMP' x='1.5500' y='-0.6000' z='0.0000' rx='0.0000' ry='0.0000' rz='0.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='MA-12a' x='-1.8267' y='-1.1212' z='0.0000' rx='0.0000' ry='0.0000' rz='180.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='BEV02' x='-1.9962' y='-1.0938' z='0.7888' rx='0.0000' ry='0.0000' rz='180.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='EM-22b' x='-1.7767' y='-1.0960' z='0.8456' rx='0.0000' ry='0.0000' rz='0.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='BSN01' x='-1.8476' y='-1.1030' z='0.3160' rx='0.0000' ry='0.0000' rz='0.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='D-7' x='-1.0476' y='-1.1583' z='0.0000' rx='0.0000' ry='0.0000' rz='180.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='EM-4' x='0.2577' y='0.4346' z='0.0000' rx='0.0000' ry='0.0000' rz='-90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='CC-1a' x='0.0877' y='1.0891' z='0.0000' rx='0.0000' ry='0.0000' rz='0.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='PC-6a' x='-1.2980' y='1.4256' z='0.0000' rx='0.0000' ry='0.0000' rz='0.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='BMA05' x='-1.9642' y='1.4213' z='1.8474' rx='0.0000' ry='0.0000' rz='0.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='BASI01' x='-1.8275' y='0.3581' z='0.0000' rx='0.0000' ry='0.0000' rz='90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='BSF01' x='-0.8240' y='0.3677' z='0.0000' rx='0.0000' ry='0.0000' rz='0.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='D-7' x='2.1599' y='0.2815' z='0.0000' rx='0.0000' ry='0.0000' rz='-90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='M-3a' x='1.8920' y='1.1290' z='0.0000' rx='0.0000' ry='0.0000' rz='0.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='M-6a-75cm' x='1.0485' y='1.1122' z='0.0000' rx='0.0000' ry='0.0000' rz='-90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='B-1a' x='1.8941' y='1.3751' z='0.0000' rx='0.0000' ry='0.0000' rz='0.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='H-4' x='1.6747' y='1.4250' z='0.0000' rx='0.0000' ry='0.0000' rz='0.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='H-10' x='1.3341' y='1.4254' z='0.0000' rx='0.0000' ry='0.0000' rz='0.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='MCPTACONSULTORIO' x='2.4080' y='-1.3326' z='0.0000' rx='0.0000' ry='0.0000' rz='90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='PTACONSULTORIOVENTANA' x='2.4080' y='-1.2826' z='0.0000' rx='0.0000' ry='0.0000' rz='90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='MCPTACONSULTORIO' x='0.6069' y='-1.3326' z='0.0000' rx='0.0000' ry='0.0000' rz='90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='PTACONSULTORIOVENTANA' x='0.6069' y='-1.2826' z='0.0000' rx='0.0000' ry='0.0000' rz='90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+</scene>

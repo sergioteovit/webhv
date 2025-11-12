@@ -7,7 +7,7 @@
 </head>
 <body>  
     <?php
-    define("_JEXEC", 1);
+    defined("_JEXEC", 1);
     define("JPATH_BASE", realpath("../.."));
 
     echo "<h1>Datos del usuario</h1>";
@@ -15,18 +15,24 @@
     $jpathbaseDefines = JPATH_BASE . "/includes/defines.php";
     $jpathbaseFramework = JPATH_BASE . "/includes/framework.php";
 
+    echo "The file " . $jpathbaseDefines . " and " . $jpathbaseFramework . " exists.........";
+
     if (file_exists($jpathbaseDefines) && file_exists($jpathbaseFramework)) {
-        echo "The file '$jpathbaseDefines' and '$jpathbaseFramework' exists.........";
+        echo "The file " . $jpathbaseDefines . " and " . $jpathbaseFramework . " exists.........";
 
         require_once $jpathbaseDefines;
         require_once $jpathbaseFramework;
-        
+
+        // Get the Joomla application instance
+        $app = JFactory::getApplication("site");
+        $app->initialise();
+
         echo "<h1>Datos del usuario</h1>";
-        
+
         // For Joomla 4.x and above
-        use Joomla\CMS\Factory;
-        $user = Factory::getUser();
-        
+        //use Joomla\CMS\Factory;
+        $user = JFactory::getUser();
+
         // Accessing user properties
         $userId = $user->id;
         $userName = $user->name;
@@ -37,7 +43,7 @@
 
         // You can also access user parameters/preferences
         $userParams = $user->getParams();
-        $preferredLanguage = $userParams->get('language');
+        $preferredLanguage = $userParams->get("language");
 
         // Displaying some information (for demonstration)
         echo "User ID: " . $userId . "<br>";
@@ -48,11 +54,9 @@
         } else {
             echo "Status: Logged in<br>";
         }
-        
     } else {
-        echo "The file '$jpathbaseDefines' or '$jpathbaseFramework' does not exist.";
+        echo "The file " . $jpathbaseDefines . " and " . $jpathbaseFramework . " doesn't exists.........";
     }
-
-?>
+    ?>
 </body>
 </html>

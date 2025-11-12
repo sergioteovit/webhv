@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3306
--- Tiempo de generación: 04-11-2025 a las 10:39:51
+-- Tiempo de generación: 12-11-2025 a las 12:50:44
 -- Versión del servidor: 8.0.34
 -- Versión de PHP: 7.4.33
 
@@ -72,7 +72,7 @@ INSERT INTO `systems` (`ID`, `System`, `Icon`, `Description`, `Url`) VALUES
 (3, 'Óseo', 'oseo.png', '', 'oseo'),
 (4, 'Nervioso', 'nervioso.png', '', 'nervioso'),
 (5, 'Endócrino', 'endocrino.png', '', 'endocrino'),
-(6, 'Linfático o inmunológico', 'linfatico.png', '', 'linfatico'),
+(6, 'Linfático e Inmunológico', 'linfatico.png', '', 'linfatico'),
 (7, 'Circulatorio', 'circulatorio.png', '', 'circulatorio'),
 (8, 'Urinario', 'urinario.png', '', 'urinario'),
 (9, 'Respiratorio', 'respiratorio.png', '', 'respiratorio'),

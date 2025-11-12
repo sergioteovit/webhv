@@ -1,0 +1,152 @@
+<scenarios>
+	<scenario name="Consultorio Médico Familiar" icon="scenesicons/Arq03" room="ARQ-03" enabled="true">
+	</scenario>
+	<scenario name="Consultorio Gineco-Obstetra" icon="scenesicons/Arq04" room="ARQ-04" enabled="true">
+	</scenario>
+	<scenario name="Consultorio de Odontología - A" icon="scenesicons/Arq05" room="ARQ05" enabled="true">
+	</scenario>
+	<scenario name="Consultorio de Odontología - B" icon="scenesicons/Arq06" room="ARQ-06" enabled="true">
+	</scenario>
+	<scenario name="Consultorio de Oftalmología - A" icon="scenesicons/Arq07" room="ARQ-7" enabled="true">
+	</scenario>
+	<scenario name="Consultorio de Oftalmología - B" icon="scenesicons/Arq08" room="ARQ-8" enabled="true">
+	</scenario>
+	<scenario name="Consultorio de Oftalmología - C" icon="scenesicons/Arq09" room="ARQ-09" enabled="true">
+	</scenario>
+	<scenario name="Consultorio de Ecografía" icon="scenesicons/Arq10" room="ARQ-10" enabled="true">
+	</scenario>
+	<scenario name="Consultorio de Psicología" icon="scenesicons/Arq11" room="ARQ-11" enabled="true">
+	</scenario>
+	<scenario name="Consultorio de Geriatría" icon="scenesicons/Arq12" room="ARQ-12" enabled="true">
+	</scenario>
+	<scenario name="Consultorio de Pediatría" icon="scenesicons/Arq13" room="ARQ-13" enabled="true">
+	</scenario>
+	<scenario name="Consultorio de Ginecología" icon="scenesicons/Arq46" room="ARQ-46" enabled="true">
+	</scenario>
+	<scenario name="Sala de Yeso" icon="scenesicons/Arq14" room="ARQ-14" enabled="true">
+	</scenario>
+	<scenario name="Sala de Hospitalización Una Cama" icon="scenesicons/Arq20" room="ARQ20" enabled="true">
+	</scenario>
+	<scenario name="Sala de Hospitalización Dos Camas" icon="scenesicons/Arq21" room="ARQ-21" enabled="true">
+	</scenario>
+	<scenario name="Sala de Adaptación Neonatal" icon="scenesicons/Arq22" room="ARQ-22" enabled="true">
+	</scenario>
+	<scenario name="Sala de Extracción de Leche Materna" icon="scenesicons/Arq23" room="ARQ-23" enabled="true">
+	</scenario>
+	<scenario name="Sala de Rayos X - Equipo Techo" icon="scenesicons/Arq38" room="ARQ-38" enabled="true">
+	</scenario>
+	<scenario name="Sala de Rayos X - Equipo Piso" icon="scenesicons/Arq39" room="ARQ-39" enabled="true">
+	</scenario>
+	<scenario name="Sala de Densitometría Ósea" icon="scenesicons/Arq40" room="ARQ-40" enabled="true">
+	</scenario>
+	<scenario name="Sala de Resonancia Magnética" icon="scenesicons/Arq41" room="ARQ-41" enabled="true">
+	</scenario>
+	<scenario name="Tomografía" icon="scenesicons/Arq37" room="ARQ-37" enabled="true">
+	</scenario>
+	<scenario name="Sala de Mamografías - A" icon="scenesicons/Arq42" room="ARQ-42" enabled="true">
+	</scenario>
+	<scenario name="Sala de Mamografías - B" icon="scenesicons/Arq43" room="ARQ-43" enabled="true">
+	</scenario>
+	<scenario name="Sala de Partos" icon="scenesicons/Arq50" room="ARQ-50" enabled="true">
+	</scenario>
+	<scenario name="Sala de Recuperación para dos Camas" icon="scenesicons/Arq51" room="ARQ-51" enabled="true">
+	</scenario>
+	<scenario name="Sala de Recuperación para cuatro Camas" icon="scenesicons/Arq52" room="ARQ-52" enabled="true">
+	</scenario>
+	<scenario name="Sala de Aislado UCI Neonatal" icon="scenesicons/Arq54" room="ARQ-54" enabled="true">
+	</scenario>
+	<scenario name="Sala de Autopsias" icon="scenesicons/Arq76" room="ARQ-76" enabled="true">
+	</scenario>
+	<scenario name="Procedimientos Ginecológicos y Obstétricos" icon="scenesicons/Arq15" room="ARQ15" enabled="true">
+	</scenario>
+	<scenario name="Procedimientos de Cirugía Menor" icon="scenesicons/Arq16" room="ARQ-16" enabled="true">
+	</scenario>
+	<scenario name="Quirófano - A" icon="scenesicons/Arq48" room="ARQ-48" enabled="true">
+	</scenario>
+	<scenario name="Quirófano - B" icon="scenesicons/Arq49" room="ARQ-49" enabled="true">
+	</scenario>
+	<scenario name="Unidad de Cuidados Intensivos Neonatal" icon="scenesicons/Arq53" room="ARQ-53" enabled="true">
+	</scenario>
+	<scenario name="Baños de Artesa para Recién Nacidos" icon="scenesicons/Arq44" room="ARQ-44" enabled="true">
+	</scenario>
+	<scenario name="Servicio de Banco de Leche Materna" icon="scenesicons/Arq68" room="ARQ-68" enabled="true">
+	</scenario>
+	<scenario name="Unidad de Cuidados Intensivos - A" icon="scenesicons/Arq55" room="ARQ-55" enabled="true">
+	</scenario>
+	<scenario name="Unidad de Cuidados Intensivos - B" icon="scenesicons/Arq56" room="ARQ-56" enabled="true">
+	</scenario>
+	<scenario name="Unidad de Emergencia" icon="scenesicons/Arq45" room="ARQ-45" enabled="true">
+	</scenario>
+	<scenario name="Triage" icon="scenesicons/Arq81" room="ARQ-81" enabled="false">
+	</scenario>
+	<scenario name="Unidad de Endoscopía" icon="scenesicons/Arq80" room="ARQ-80" enabled="true">
+	</scenario>
+	<scenario name="Unidad de Hemodiálisis" icon="scenesicons/Arq69" room="ARQ-69" enabled="true">
+	</scenario>
+	<scenario name="Nebulización de Adultos" icon="scenesicons/Arq47" room="ARQ-47" enabled="true">
+	</scenario>
+	<scenario name="Habitación Aislado Adulto" icon="scenesicons/Arq63" room="ARQ-63" enabled="true">
+	</scenario>
+	<scenario name="Habitación Aislado Pediátrico" icon="scenesicons/Arq64" room="ARQ-64" enabled="true">
+	</scenario>
+	<scenario name="Unidad de Reanimación Trauma Shock - A" icon="scenesicons/Arq35" room="ARQ-35" enabled="true">
+	</scenario>
+	<scenario name="Unidad de Reanimación Trauma Shock - B" icon="scenesicons/Arq36" room="ARQ-36" enabled="true">
+	</scenario>
+	<scenario name="Estación de enfermeras - A" icon="scenesicons/Arq17" room="ARQ-17" enabled="true">
+	</scenario>
+	<scenario name="Estación de enfermeras - B" icon="scenesicons/Arq18" room="ARQ-18" enabled="true">
+	</scenario>
+	<scenario name="Estación de enfermeras - C" icon="scenesicons/Arq19" room="ARQ-19" enabled="true">
+	</scenario>
+	<scenario name="Unidad de Toma de Muestras" icon="scenesicons/Arq24" room="ARQ-24" enabled="true">
+	</scenario>
+	<scenario name="Laboratorio de la Unidad de Emergencia" icon="scenesicons/Arq25" room="ARQ-25" enabled="true">
+	</scenario>
+	<scenario name="Unidad de Toxicología" icon="scenesicons/Arq26" room="ARQ-26" enabled="true">
+	</scenario>
+	<scenario name="Unidad de Parasitología" icon="scenesicons/Arq27" room="ARQ-27" enabled="true">
+	</scenario>
+	<scenario name="Unidad de Uroanálisis" icon="scenesicons/Arq28" room="ARQ-28" enabled="true">
+	</scenario>
+	<scenario name="Unidad de Bioquímica Clínica" icon="scenesicons/Arq29" room="ARQ-29" enabled="true">
+	</scenario>
+	<scenario name="Unidad de Hematología" icon="scenesicons/Arq30" room="ARQ-30" enabled="true">
+	</scenario>
+	<scenario name="Unidad de Serología" icon="scenesicons/Arq31" room="ARQ-31" enabled="true">
+	</scenario>
+	<scenario name="Unidad de Laboratorio Básico" icon="scenesicons/Arq32" room="ARQ-32" enabled="true">
+	</scenario>
+	<scenario name="Unidad de Inmunovirología" icon="scenesicons/Arq33" room="ARQ-33" enabled="true">
+	</scenario>
+	<scenario name="Unidad de Bacteriología y Medios de Cultivo" icon="scenesicons/Arq34" room="ARQ-34" enabled="true">
+	</scenario>
+	<scenario name="Servicio de Vacunación - A" icon="scenesicons/Arq59" room="ARQ-59" enabled="true">
+	</scenario>
+	<scenario name="Servicio de Vacunación - B" icon="scenesicons/Arq60" room="ARQ-60" enabled="true">
+	</scenario>
+	<scenario name="Servicio de Farmacia - A" icon="scenesicons/Arq65" room="ARQ-65" enabled="true">
+	</scenario>
+	<scenario name="Servicio de Farmacia - B" icon="scenesicons/Arq66" room="ARQ-66" enabled="true">
+	</scenario>
+	<scenario name="Servicio de Farmacia - C" icon="scenesicons/Arq67" room="ARQ-67" enabled="true">
+	</scenario>
+	<scenario name="Laboratorio de Inmunohematología - Banco de Sangre" icon="scenesicons/Arq82" room="ARQ-82" enabled="false">
+	</scenario>
+	<scenario name="Área de extracción - Banco de Sangre" icon="scenesicons/Arq83" room="ARQ-83" enabled="false">
+	</scenario>
+	<scenario name="Área de fraccionamiento - Banco de Sangre" icon="scenesicons/Arq84" room="ARQ-84" enabled="false">
+	</scenario>
+	<scenario name="Cuarto de conservación de sangre" icon="scenesicons/Arq85" room="ARQ-85" enabled="false">
+	</scenario>
+	<scenario name="Departamento de Alimentación y Nutrición" icon="scenesicons/Arq70" room="ARQ-70" enabled="false">
+	</scenario>
+	<scenario name="Medicina Física - Rehabilitación Física" icon="scenesicons/Arq72" room="ARQ-72" enabled="false">
+	</scenario>
+	<scenario name="Vestidor Personal" icon="scenesicons/Arq74" room="ARQ-74" enabled="false">
+	</scenario>
+	<scenario name="Servicios Higiénicos" icon="scenesicons/Arq75" room="ARQ-75" enabled="false">
+	</scenario>
+	<scenario name="Almacén" icon="scenesicons/Arq79" room="ARQ-79" enabled="true">
+	</scenario>
+</scenarios>

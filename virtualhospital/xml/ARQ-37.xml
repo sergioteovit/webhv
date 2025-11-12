@@ -1,0 +1,27 @@
+<scene name='ARQ-37'>
+    <object name='TLAMP' x='-3.2500' y='3.0000' z='0.0000' rx='0.0000' ry='0.0000' rz='90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='TLAMP' x='-1.7500' y='3.0000' z='0.0000' rx='0.0000' ry='0.0000' rz='90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='TLAMP' x='-0.2500' y='3.0000' z='0.0000' rx='0.0000' ry='0.0000' rz='90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='TLAMP' x='1.2500' y='3.0000' z='0.0000' rx='0.0000' ry='0.0000' rz='90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='TLAMP' x='-3.2500' y='0.7000' z='0.0000' rx='0.0000' ry='0.0000' rz='90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='TLAMP' x='-1.7500' y='0.7000' z='0.0000' rx='0.0000' ry='0.0000' rz='90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='TLAMP' x='-0.2500' y='0.7000' z='0.0000' rx='0.0000' ry='0.0000' rz='90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='TLAMP' x='1.2500' y='0.7000' z='0.0000' rx='0.0000' ry='0.0000' rz='90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='TLAMP' x='3.3000' y='3.0000' z='0.0000' rx='0.0000' ry='0.0000' rz='90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='TLAMP' x='3.3000' y='0.3000' z='0.0000' rx='0.0000' ry='0.0000' rz='90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='MCPTASANITARIO2' x='2.2064' y='-0.6134' z='0.0000' rx='0.0000' ry='0.0000' rz='0.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='PTASANITARIO2' x='2.2564' y='-0.6134' z='0.0000' rx='0.0000' ry='0.0000' rz='0.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='MCPTARADIOLOGIA' x='1.7100' y='-0.6134' z='0.0000' rx='0.0000' ry='0.0000' rz='180.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='MCPTASANITARIO2' x='2.1317' y='1.2031' z='0.0000' rx='0.0000' ry='0.0000' rz='-90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='PTARADIOLOGIA' x='1.6600' y='-0.6134' z='0.0000' rx='0.0000' ry='0.0000' rz='180.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='PTASANITARIO2' x='2.1317' y='1.1531' z='0.0000' rx='0.0000' ry='0.0000' rz='-90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='EM-54a' x='-1.4365' y='2.0067' z='0.0000' rx='0.0000' ry='0.0000' rz='90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='CU-16' x='-3.2457' y='-0.1842' z='0.0000' rx='0.0000' ry='0.0000' rz='180.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='TM-5-3salidas' x='-4.0936' y='1.0729' z='0.0000' rx='0.0000' ry='0.0000' rz='90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='MC-34' x='4.0936' y='0.9658' z='0.0000' rx='0.0000' ry='0.0000' rz='-90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='MC-37' x='3.2863' y='2.0497' z='0.0000' rx='0.0000' ry='0.0000' rz='-90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='MC-37' x='3.2863' y='3.1922' z='0.0000' rx='0.0000' ry='0.0000' rz='-90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='O-26' x='2.6582' y='3.2032' z='0.0000' rx='0.0000' ry='0.0000' rz='0.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='O-26' x='2.6582' y='2.1068' z='0.0000' rx='0.0000' ry='0.0000' rz='0.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+    <object name='O-34' x='2.5824' y='3.9208' z='0.0000' rx='0.0000' ry='0.0000' rz='90.0000' sx='1.0' sy='1.0' sz='1.0'></object>
+</scene>
