@@ -38,9 +38,9 @@ function readSceneData() {
             allItems.forEach((item) => {
                 let objectData = {
                     name: item.getAttribute("name"),
-                    x: Number(item.getAttribute("x")) * 100,
-                    y: Number(item.getAttribute("z")) * 100,
-                    z: -Number(item.getAttribute("y")) * 100,
+                    x: Number(item.getAttribute("x")),
+                    y: Number(item.getAttribute("z")),
+                    z: -Number(item.getAttribute("y")),
                     rx: Number(item.getAttribute("ry")),
                     ry: Number(item.getAttribute("rz")),
                     rz: Number(item.getAttribute("rx")),
@@ -49,10 +49,10 @@ function readSceneData() {
                     sz: Number(item.getAttribute("sy"))
                 };
 
-                console.log("Item:" + objectData.name);
+                /*console.log("Item:" + objectData.name);
                 console.log("pos: (" + objectData.x + "," + objectData.y + "," + objectData.z + ")");
                 console.log("rot: (" + objectData.rx + "," + objectData.ry + "," + objectData.rz + ")");
-                console.log("scl: (" + objectData.sx + "," + objectData.sy + "," + objectData.sz + ")");
+                console.log("scl: (" + objectData.sx + "," + objectData.sy + "," + objectData.sz + ")");*/
 
                 loadFBX(objectData);
             });
@@ -68,17 +68,28 @@ function loadFBX(objectData) {
     loader.load(
         "models/" + objectData.name + ".fbx",
         (object) => {
-            object.position.set(0, 0, 0);
-            object.rotation.set(0, 0, 0);
-            object.scale.set(1, 1, 1);
-
-            object.scale.set(objectData.sx, objectData.sy, objectData.sz);
+            object.scale.set(objectData.sx * 0.01, objectData.sy * 0.01, objectData.sz * 0.01);
 
             object.rotateX(THREE.MathUtils.degToRad(objectData.rx));
             object.rotateY(THREE.MathUtils.degToRad(objectData.ry));
             object.rotateZ(THREE.MathUtils.degToRad(objectData.rz));
 
             object.position.set(objectData.x, objectData.y, objectData.z);
+
+            if (objectData.name == "TLAMP") {
+
+                const spotLight = new THREE.SpotLight(0xffffff, 2, 10, Math.PI/2.1, 0.1, 2);
+                
+                spotLight.position.set(objectData.x, objectData.y+2.8, objectData.z);
+                const targetl = new THREE.Object3D();
+                targetl.position.set(objectData.x, 0, objectData.z);
+                spotLight.target = targetl;
+                scene.add(targetl);
+                scene.add(spotLight);
+                //const spotLightHelper = new THREE.SpotLightHelper(spotLight);
+                //scene.add(spotLightHelper);
+
+            }
 
             scene.add(object);
             console.log("models/" + objectData.name + ".fbx  loaded");
@@ -100,28 +111,20 @@ function start() {
     scene = new THREE.Scene();
 
     // 2. Create and configure the Camera
-    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    camera.position.z = 10; // Position the camera back so we can see objects
+    camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.y = 1.5;
+    camera.position.z = 2; // Position the camera back so we can see objects
 
     // 3. Create the Renderer
     renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
 
-    const hemiLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 2);
-    hemiLight.position.set(0, 20, 0);
-    scene.add(hemiLight);
+    const ambientlight = new THREE.AmbientLight(0xffffff, 1); // soft white light
+    scene.add(ambientlight);
 
-    const dirLight = new THREE.DirectionalLight(0xffffff, 2);
-    dirLight.position.set(3, 10, 10);
-    dirLight.castShadow = true;
-    dirLight.shadow.camera.top = 2;
-    dirLight.shadow.camera.bottom = -2;
-    dirLight.shadow.camera.left = -2;
-    dirLight.shadow.camera.right = 2;
-    dirLight.shadow.camera.near = 0.1;
-    dirLight.shadow.camera.far = 40;
-    scene.add(dirLight);
+    const Hlight = new THREE.HemisphereLight(0xffffff, 0x000000, 3);
+    scene.add(Hlight);
 
     // 5. Handle window resize
     window.addEventListener("resize", onWindowResize, false);
@@ -131,11 +134,11 @@ function start() {
     controls.enableDamping = true; // Provides a smoother feel
     controls.dampingFactor = 0.25;
     controls.screenSpacePanning = false;
-    controls.minDistance = 1;
+    controls.minDistance = 0.01;
     controls.maxDistance = 500;
 
     // Optional: Target the controls to a specific point (defaults to origin 0,0,0)
-    controls.target.set(0, 0, 0);
+    controls.target.set(0, 1.5, 0);
 
     scene.background = new THREE.Color(0.5, 0.7, 0.9);
 
