@@ -17,30 +17,45 @@ function readSceneData() {
             const xmlDoc = parser.parseFromString(xmlString, "text/xml");
             console.log("Root element name:", xmlDoc.documentElement.nodeName);
 
+            let rootData = {
+                name: xmlDoc.documentElement.getAttribute("name"),
+                x: 0,
+                y: 0,
+                z: 0,
+                rx: 0,
+                ry: 0,
+                rz: 0,
+                sx: 1,
+                sy: 1,
+                sz: 1
+            };
+
+            loadFBX(rootData);
+
             // Example: Iterating through multiple elements
             const allItems = xmlDoc.querySelectorAll("object");
+
             allItems.forEach((item) => {
                 let objectData = {
                     name: item.getAttribute("name"),
-                    x: Number(item.getAttribute("x")),
-                    y: Number(item.getAttribute("y")),
-                    z: Number(item.getAttribute("z")),
-                    rx: Number(item.getAttribute("rx")),
-                    ry: Number(item.getAttribute("ry")),
-                    rz: Number(item.getAttribute("rz")),
+                    x: Number(item.getAttribute("x")) * 100,
+                    y: Number(item.getAttribute("z")) * 100,
+                    z: -Number(item.getAttribute("y")) * 100,
+                    rx: Number(item.getAttribute("ry")),
+                    ry: Number(item.getAttribute("rz")),
+                    rz: Number(item.getAttribute("rx")),
                     sx: Number(item.getAttribute("sx")),
-                    sy: Number(item.getAttribute("sy")),
-                    sz: Number(item.getAttribute("sz"))
+                    sy: Number(item.getAttribute("sz")),
+                    sz: Number(item.getAttribute("sy"))
                 };
 
-                /*console.log("Item:" + objectData.name);
+                console.log("Item:" + objectData.name);
                 console.log("pos: (" + objectData.x + "," + objectData.y + "," + objectData.z + ")");
                 console.log("rot: (" + objectData.rx + "," + objectData.ry + "," + objectData.rz + ")");
-                console.log("scl: (" + objectData.sx + "," + objectData.sy + "," + objectData.sz + ")");*/
+                console.log("scl: (" + objectData.sx + "," + objectData.sy + "," + objectData.sz + ")");
 
                 loadFBX(objectData);
             });
-
         })
         .catch((error) => {
             console.error("Error fetching XML:", error);
@@ -53,10 +68,20 @@ function loadFBX(objectData) {
     loader.load(
         "models/" + objectData.name + ".fbx",
         (object) => {
-            object.position.x = objectData.x;
-            object.position.y = objectData.y;
-            object.position.z = objectData.z;
+            object.position.set(0, 0, 0);
+            object.rotation.set(0, 0, 0);
+            object.scale.set(1, 1, 1);
+
+            object.scale.set(objectData.sx, objectData.sy, objectData.sz);
+
+            object.rotateX(THREE.MathUtils.degToRad(objectData.rx));
+            object.rotateY(THREE.MathUtils.degToRad(objectData.ry));
+            object.rotateZ(THREE.MathUtils.degToRad(objectData.rz));
+
+            object.position.set(objectData.x, objectData.y, objectData.z);
+
             scene.add(object);
+            console.log("models/" + objectData.name + ".fbx  loaded");
         },
         function (progress) {
             console.log((progress.loaded / progress.total) * 100 + "% cargado");
@@ -83,8 +108,20 @@ function start() {
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
 
-    const ambientLight = new THREE.AmbientLight(0x404040); // Soft white light
-    scene.add(ambientLight);
+    const hemiLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 2);
+    hemiLight.position.set(0, 20, 0);
+    scene.add(hemiLight);
+
+    const dirLight = new THREE.DirectionalLight(0xffffff, 2);
+    dirLight.position.set(3, 10, 10);
+    dirLight.castShadow = true;
+    dirLight.shadow.camera.top = 2;
+    dirLight.shadow.camera.bottom = -2;
+    dirLight.shadow.camera.left = -2;
+    dirLight.shadow.camera.right = 2;
+    dirLight.shadow.camera.near = 0.1;
+    dirLight.shadow.camera.far = 40;
+    scene.add(dirLight);
 
     // 5. Handle window resize
     window.addEventListener("resize", onWindowResize, false);
@@ -99,16 +136,11 @@ function start() {
 
     // Optional: Target the controls to a specific point (defaults to origin 0,0,0)
     controls.target.set(0, 0, 0);
-    
-    const geometry = new THREE.BoxGeometry(1, 1, 1); 
-    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-    const cube = new THREE.Mesh(geometry, material);
-    scene.add(cube);
-    
-    scene.background = new THREE.Color(0.5, 0.7, 0.9); 
+
+    scene.background = new THREE.Color(0.5, 0.7, 0.9);
 
     readSceneData();
-    
+
     animate();
 }
 
