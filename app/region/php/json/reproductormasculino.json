@@ -3,6 +3,7 @@
     "levels": [
         {
             "name": "Caso 1",
+            "complexity": "1",
             "areas": [
                 "Anatomía",
                 "Embriología Humana",
@@ -14,6 +15,7 @@
         },
         {
             "name": "Caso 2",
+            "complexity": "1",
             "areas": [
                 "Anatomía",
                 "Embriología Humana",
@@ -25,6 +27,7 @@
         },
         {
             "name": "Caso 3",
+            "complexity": "1",
             "areas": [
                 "Anatomía",
                 "Embriología Humana",
@@ -36,6 +39,7 @@
         },
         {
             "name": "Caso 4",
+            "complexity": "1",
             "areas": [
                 "Anatomía",
                 "Embriología Humana",
@@ -47,6 +51,7 @@
         },
         {
             "name": "Caso 5",
+            "complexity": "1",
             "areas": [
                 "Anatomía",
                 "Embriología Humana",
@@ -58,6 +63,7 @@
         },
         {
             "name": "Caso 6",
+            "complexity": "1",
             "areas": [
                 "Anatomía",
                 "Embriología Humana",
@@ -69,6 +75,7 @@
         },
         {
             "name": "Caso 7",
+            "complexity": "1",
             "areas": [
                 "Anatomía",
                 "Embriología Humana",
@@ -80,6 +87,7 @@
         },
         {
             "name": "Caso 8",
+            "complexity": "1",
             "areas": [
                 "Anatomía",
                 "Embriología Humana",
@@ -91,6 +99,7 @@
         },
         {
             "name": "Caso 9",
+            "complexity": "1",
             "areas": [
                 "Anatomía",
                 "Embriología Humana",
@@ -102,6 +111,7 @@
         },
         {
             "name": "Caso 10",
+            "complexity": "1",
             "areas": [
                 "Anatomía",
                 "Embriología Humana",
@@ -113,6 +123,7 @@
         },
         {
             "name": "Caso 11",
+            "complexity": "1",
             "areas": [
                 "Anatomía",
                 "Embriología Humana",
@@ -124,6 +135,7 @@
         },
         {
             "name": "Caso 12",
+            "complexity": "1",
             "areas": [
                 "Anatomía",
                 "Embriología Humana",
@@ -135,6 +147,7 @@
         },
         {
             "name": "Caso 13",
+            "complexity": "1",
             "areas": [
                 "Anatomía",
                 "Embriología Humana",
@@ -146,6 +159,7 @@
         },
         {
             "name": "Caso 14",
+            "complexity": "1",
             "areas": [
                 "Anatomía",
                 "Embriología Humana",
@@ -157,6 +171,7 @@
         },
         {
             "name": "Caso 15",
+            "complexity": "1",
             "areas": [
                 "Anatomía",
                 "Embriología Humana",
@@ -168,6 +183,7 @@
         },
         {
             "name": "Caso 16",
+            "complexity": "2",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -180,6 +196,7 @@
         },
         {
             "name": "Caso 17",
+            "complexity": "2",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -192,6 +209,7 @@
         },
         {
             "name": "Caso 18",
+            "complexity": "2",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -204,6 +222,7 @@
         },
         {
             "name": "Caso 19",
+            "complexity": "2",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -216,6 +235,7 @@
         },
         {
             "name": "Caso 20",
+            "complexity": "2",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -228,6 +248,7 @@
         },
         {
             "name": "Caso 21",
+            "complexity": "2",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -240,6 +261,7 @@
         },
         {
             "name": "Caso 22",
+            "complexity": "2",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -252,6 +274,7 @@
         },
         {
             "name": "Caso 23",
+            "complexity": "2",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -264,6 +287,7 @@
         },
         {
             "name": "Caso 24",
+            "complexity": "2",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -276,6 +300,7 @@
         },
         {
             "name": "Caso 25",
+            "complexity": "2",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -288,6 +313,7 @@
         },
         {
             "name": "Caso 26",
+            "complexity": "2",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -300,6 +326,7 @@
         },
         {
             "name": "Caso 27",
+            "complexity": "2",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -312,6 +339,7 @@
         },
         {
             "name": "Caso 28",
+            "complexity": "2",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -324,6 +352,7 @@
         },
         {
             "name": "Caso 29",
+            "complexity": "2",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -336,6 +365,7 @@
         },
         {
             "name": "Caso 30",
+            "complexity": "2",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -348,6 +378,7 @@
         },
         {
             "name": "Caso 31",
+            "complexity": "3",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -361,6 +392,7 @@
         },
         {
             "name": "Caso 32",
+            "complexity": "3",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -374,6 +406,7 @@
         },
         {
             "name": "Caso 33",
+            "complexity": "3",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -387,6 +420,7 @@
         },
         {
             "name": "Caso 34",
+            "complexity": "3",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -400,6 +434,7 @@
         },
         {
             "name": "Caso 35",
+            "complexity": "3",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -413,6 +448,7 @@
         },
         {
             "name": "Caso 36",
+            "complexity": "3",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -426,6 +462,7 @@
         },
         {
             "name": "Caso 37",
+            "complexity": "3",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -439,6 +476,7 @@
         },
         {
             "name": "Caso 38",
+            "complexity": "3",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -452,6 +490,7 @@
         },
         {
             "name": "Caso 39",
+            "complexity": "3",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -465,6 +504,7 @@
         },
         {
             "name": "Caso 40",
+            "complexity": "3",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -478,6 +518,7 @@
         },
         {
             "name": "Caso 41",
+            "complexity": "3",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -491,6 +532,7 @@
         },
         {
             "name": "Caso 42",
+            "complexity": "3",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -504,6 +546,7 @@
         },
         {
             "name": "Caso 43",
+            "complexity": "3",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -517,6 +560,7 @@
         },
         {
             "name": "Caso 44",
+            "complexity": "3",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -530,6 +574,7 @@
         },
         {
             "name": "Caso 45",
+            "complexity": "3",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -543,6 +588,7 @@
         },
         {
             "name": "Caso 46",
+            "complexity": "4",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -557,6 +603,7 @@
         },
         {
             "name": "Caso 47",
+            "complexity": "4",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -571,6 +618,7 @@
         },
         {
             "name": "Caso 48",
+            "complexity": "4",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -585,6 +633,7 @@
         },
         {
             "name": "Caso 49",
+            "complexity": "4",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -599,6 +648,7 @@
         },
         {
             "name": "Caso 50",
+            "complexity": "4",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -613,6 +663,7 @@
         },
         {
             "name": "Caso 51",
+            "complexity": "4",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -627,6 +678,7 @@
         },
         {
             "name": "Caso 52",
+            "complexity": "4",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -641,6 +693,7 @@
         },
         {
             "name": "Caso 53",
+            "complexity": "4",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -655,6 +708,7 @@
         },
         {
             "name": "Caso 54",
+            "complexity": "4",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -669,6 +723,7 @@
         },
         {
             "name": "Caso 55",
+            "complexity": "4",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -683,6 +738,7 @@
         },
         {
             "name": "Caso 56",
+            "complexity": "4",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -697,6 +753,7 @@
         },
         {
             "name": "Caso 57",
+            "complexity": "4",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -711,6 +768,7 @@
         },
         {
             "name": "Caso 58",
+            "complexity": "4",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -725,6 +783,7 @@
         },
         {
             "name": "Caso 59",
+            "complexity": "4",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",
@@ -739,6 +798,7 @@
         },
         {
             "name": "Caso 60",
+            "complexity": "4",
             "areas": [
                 "Biología Molecular",
                 "Biología Celular",

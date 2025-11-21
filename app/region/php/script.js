@@ -25,6 +25,7 @@ $.getJSON( "json/" + document.title + ".json", function( json ) {
                     </div>
                     <div class="ag-timeline-card_info">
                       <div class="ag-timeline-card_title">`+(index+1)+`</div>
+                      <div class="ag-timeline-card_level">Nivel de Complejidad `+level.complexity+`</div>
                       <div class="ag-timeline-card_areas">`+level.areas+`</div>
                       <div class="ag-timeline-card_desc">`+level.brief+`</div>
                     </div>
@@ -58,6 +59,7 @@ $.getJSON( "json/" + document.title + ".json", function( json ) {
                     </div>
                     <div class="ag-timeline-card_info">
                       <div class="ag-timeline-card_title">`+(index+1)+`</div>
+                      <div class="ag-timeline-card_level">Nivel de Complejidad `+level.complexity+`</div>
                       <div class="ag-timeline-card_areas">`+level.areas+`</div>
                       <div class="ag-timeline-card_desc">`+level.brief+`</div>
                     </div>

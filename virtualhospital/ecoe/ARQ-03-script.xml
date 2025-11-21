@@ -1,0 +1,105 @@
+<sscript>
+	<patient name="Juan Pérez" avatar="" convai="" pose="" x="0.0" y="0.0" z="0.0" rx="0.0" ry="0.0" rz="0.0" sx="1.0" sy="1.0" sz="1.0"></patient>
+	<doctor name="Dr. Sim" avatar="" convai="" pose="" x="0.0" y="0.0" z="0.0" rx="0.0" ry="0.0" rz="0.0" sx="1.0" sy="1.0" sz="1.0"></doctor>
+	<environment name="Escenario de consultorio" src="xml/ARQ-03.xml"></environment>
+	<intro>	Bienvenido al nivel de Consultorio. 
+	
+	En este primer escenario te encontrarás con un paciente masculino de 25 años que acude al consultorio para obtener un certificado médico.
+	
+	Por cada pregunta y acción adecuada que realices para este propósito, sumarás puntos. 
+	
+	Para desbloquear un siguiente nivel deberás alcanzar al menos 50 puntos. Podrás continuar acumulando puntos al explorar el área y resolver casos secundarios.
+	
+	Para continuar cierra este cuadro de diálogo mediante el botón X de la parte superior derecha.
+	</intro>
+	<interrogatory>
+		<question points="1">¿Cuál es su nombre?</question>
+		<question points="1">¿Cuál es su edad? </question>
+		<question points="1">¿Por qué acude a consulta? </question>
+		<question points="1">¿Cuál es su estado civil? </question>
+		<question points="1">¿Cuál es su escolaridad?</question>
+		<question points="1">¿Cuál es su ocupación?</question>
+		<question points="1">¿Cuál es su religión?</question>
+		<question points="1">¿Cuál es su nacionalidad?</question>
+		<question points="1">¿Sus padres padecen alguna enfermedad? ¿en tal caso, cuáles?</question>
+		<question points="1">¿Sus abuelos maternos padecen o padecieron alguna enfermedad?</question>
+		<question points="1">¿Sus abuelos paternos padecen o padecieron alguna enfermedad?</question>
+		<question points="1">¿Tiene hermanos? ¿en tal caso, padecen alguna enfermedad?</question>
+		<question points="1">¿Cómo es su alimentación?</question>
+		<question points="1">¿Realiza actividad física?</question>
+		<question points="1">¿Cada cuándo se baña?</question>
+		<question points="1">¿Cada cuándo se lava las manos?</question>
+		<question points="1">¿Tiene sus vacunas?</question>
+		<question points="1">¿Vive en casa propia o rentada?</question>
+		<question points="1">¿Cuál es su ocupación actual?</question>
+		<question points="1">¿A qué se dedica en sus tiempos libres?</question>
+		<question points="1">¿Qué enfermedades tuvo de pequeño?</question>
+		<question points="1">¿Sufre de alguna alergia?</question>
+		<question points="1">¿Ha tenido cirugías?</question>
+		<question points="1">¿Ha sido hospitalizado?</question>
+		<question points="1">¿Toma algún medicamento actualmente?</question>
+		<question points="1">¿Fuma?</question>
+		<question points="1">¿Toma bebidas embriagantes?, en tal caso, ¿con qué frecuencia?</question>
+		<question points="1">¿Usa alguna droga?</question>
+		<question points="1">¿Tiene algún padecimiento reciente?</question>
+	</interrogatory>
+	<questions>
+		<question>
+			<statement>Un hombre de 35 años ingresa en urgencias 30 minutos después de un accidente de tráfico. La exploración física muestra una lesión del músculo serrato anterior. ¿Cuál de estos nervios tiene más probabilidades de lesionarse junto con la lesión del músculo serrato anterior?</statement>
+			<options>
+				<option>Torácico largo</option>
+				<option>Axilar (circunflejo)</option>
+				<option>Accesorio (espinal)</option>
+				<option>Dorsal de la escápula</option>
+				<option>Toracodorsal</option>
+			</options>
+			<reasoning>
+				<option>El nervio torácico largo es el único nervio que inerva el serrato anterior.</option>
+				<option>El nervio axilar (circunflejo) inerva el deltoides y el redondo menor.</option>
+				<option>El nervio accesorio (espinal) inerva el esternocleidomastoideo y el trapecio.</option>
+				<option>El nervio dorsal de la escápula inerva los músculos romboides y la porción inferior del elevador de la escápula.</option>
+				<option>El nervio toracodorsal inerva el dorsal ancho.</option>
+			</reasoning>
+			<answer>Torácico largo</answer>
+			<object>N-2</object>
+		</question>
+		<question>
+			<statement>Un hombre de 55 años llega a urgencias porque desde hace 5 días presenta tos, sudoración nocturna y hemoptisis. La radiografía de tórax muestra tuberculosis pulmonar derecha con extensión a los cuerpos vertebrales T6 y T7, que causa una 'deformidad en joroba'. ¿Cuál de estos transtornos es más probable en la exploración radiológica?</statement>
+			<options>
+				<option>Hiperlordosis</option>
+				<option>Hipercifosis</option>
+				<option>Escoliosis</option>
+				<option>Espina bífida</option>
+				<option>Osteoartritis</option>
+			</options>
+			<reasoning>
+				<option>La Hiperlordosis, o 'espalda inclinada', es un aumento de la curvatura lumbar de la columna vertebral. La lordosis puede ser fisiológica, como en la mujer embarazada.</option>
+				<option>La Hipercifosis se caracteriza por una 'joroba' secundaria a un incremento anómalo de la curvatura anterior cóncava de la región torácica de la columna vertebral.</option>
+				<option>La Escoliosis es la curvatura lateral de la columna vertebral con rotación de las vértebras.</option>
+				<option>La Espina Bífida es un defecto del tubo neural caracterizado por fallo de cierre del arco vertebral.</option>
+				<option>La Osteoartritis es un transtorno degenerativo que afecta el cartílago articular y no está relacionada específicamente con la región dorsal de la columna vertebral.</option>
+			</reasoning>
+			<answer>Hipercifosis</answer>
+			<object>D-7</object>
+			</question>
+			<question>
+				<statement>Un hombre de 68 años llega al hospital con lumbalgia intensa. El paciente afirma que el dolor empezó lentamente 4 meses antes. No tiene antecedente de traumatismo reciente ni de actividad enérgica. La exploración muscular muestra una fuerza muscular de 5/5 y una sensibilidad normal. La radiografía de la columna vertebral muestra osteoporosis grave de la columna vertebral, con fracturas por compresión en L4 y L5. ¿Cuál de estas regiones del cuerpo vertebral tiene más probabilidad de estar fracturada en este paciente?</statement>
+				<options>
+					<option>Apófisis espinosa</option>
+					<option>Cuerpos vertebrales</option>
+					<option>Apófisis transversas</option>
+					<option>Apófisis articulares superiores</option>
+					<option>Disco intervertebral</option>
+				</options>
+				<reasoning>
+					<option>Las fracturas de las superficies espinosa, transversa o articular superior pueden ser oblicuas, transversas o conminutas.</option>
+					<option>La fractura por aplastamiento se caracteriza por compresión de todo el cuerpo vertebral. La fractura en cuña es parecida, porque afecta el cuerpo vertebral, pero implica pequeñas fracturas alrededor del perímetro del cuerpo vertebral. Ambos tipos de fractura pueden disminuir la altura global.</option>
+					<option>Las fracturas de las superficies espinosa, transversa o articular superior pueden ser oblicuas, transversas o conminutas.</option>
+					<option>Las fracturas de las superficies espinosa, transversa o articular superior pueden ser oblicuas, transversas o conminutas.</option>
+					<option>Los discos intervertebrales se asocian a hernias discales, no a fracturas por compresión.</option>
+				</reasoning>
+				<answer>Cuerpos vertebrales</answer>
+				<object>O-26</object>
+		</question>
+	</questions>
+</sscript>

@@ -281,7 +281,15 @@ img {
 
 .ag-timeline-card_areas {
   border-radius: 5px;
-  background-color: #21a7ad;
+  background-color: rgba(255, 0, 234, 0.85);
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.ag-timeline-card_level {
+  border-radius: 5px;
+  background-color: #00f4ff;
+  font-weight: bold;
 }
 
 .ag-timeline-card_desc {
