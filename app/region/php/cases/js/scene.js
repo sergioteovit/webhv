@@ -7,9 +7,13 @@ import { RGBELoader } from "RGBELoader";
 
 import { OrbitControls } from "OrbitControls";
 
+import { FBXLoader } from "FBXLoader";
+
 let camera, scene, renderer, controls;
 let avatar;
 let clock = new THREE.Clock();
+
+let sceneinitialized = false;
 
 // Controladores de movimiento
 const moveState = {
@@ -24,15 +28,29 @@ let mixer;
 
 let walkAction, walkBackAction, idleAction;
 
+const intro = document.getElementById("intro");
+intro.innerHTML = "Paciente masculino de 40 años de edad asiste a consulta por dolor punzante y ardor en la parte superior del abdomen que se irradia hacia la espalda.";
+
+const startButton = document.getElementById("startButton");
+startButton.addEventListener("click", function () {
+    if (!sceneinitialized) {
+        sceneinitialized = true;
+        init();
+    }
+});
+
 // Inicializa la escena
 function init() {
+    const overlay = document.getElementById("overlay");
+    overlay.remove();
+
     // Escena
     scene = new THREE.Scene();
     scene.background = new THREE.Color(0x87ceeb); // Cielo azul
 
     // Cámara
     camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
-    camera.position.set( 0, 1.3, 2 );
+    camera.position.set(0, 1.3, 2);
     // La posición inicial de la cámara ya no es importante, se actualizará en cada frame
 
     // Renderizador
@@ -41,8 +59,12 @@ function init() {
     document.body.appendChild(renderer.domElement);
 
     // Luces
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
-    scene.add(ambientLight);
+    const ambientlight = new THREE.AmbientLight(0xffffff, 1.0); // soft white light
+    scene.add(ambientlight);
+
+    const Hlight = new THREE.HemisphereLight(0xffffff, 0x000000, 1.5);
+    scene.add(Hlight);
+
     const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
     directionalLight.position.set(5, 10, 7.5);
     scene.add(directionalLight);
@@ -70,6 +92,9 @@ function init() {
 
     // Carga el avatar de Ready Player Me
     loadAvatar();
+
+    loadFBXFile("Paciente40-gastritis", -2, 0, 0);
+    loadFBXFile("Estomago", 2, 2, 0);
 
     // Maneja los eventos del teclado
     // setupKeyboardControls();
@@ -139,6 +164,29 @@ function loadAvatar() {
         },
         (error) => {
             console.error("Error al cargar el avatar:", error);
+        }
+    );
+}
+
+function loadFBXFile(filename, x, y, z) {
+    const loader = new FBXLoader();
+
+    loader.setResourcePath("models/" + filename + ".fbm/");
+
+    loader.load(
+        "models/" + filename + ".fbx", // Path to your FBX file
+        function (object) {
+            object.scale.set(0.01, 0.01, 0.01);
+            object.position.set(x, y, z);
+            scene.add(object);
+        },
+        function (xhr) {
+            // Optional: Progress callback
+            console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
+        },
+        function (error) {
+            // Optional: Error callback
+            console.error("An error occurred loading the FBX model:", error);
         }
     );
 }
@@ -255,6 +303,3 @@ function onWindowResize() {
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
 }
-
-// Inicia el programa
-init();

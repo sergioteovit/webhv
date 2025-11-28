@@ -1,0 +1,22 @@
+<script>
+    <intro>	Presentación del caso
+    </intro>
+    <questions>
+    	<question>
+    		<statement>Pregunta 1</statement>
+    		<options>
+    			<option>A</option>
+    			<option>B</option>
+    			<option>C</option>
+    			<option>D</option>
+    		</options>
+    		<reasoning>
+    			<option>Razonamiento A</option>
+    			<option>Razonamiento B</option>
+    			<option>Razonamiento C</option>
+    			<option>Razonamiento D</option>
+    		</reasoning>
+    		<answer>A</answer>
+    	</question>
+    </questions>
+</script>
