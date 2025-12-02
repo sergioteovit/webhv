@@ -17,7 +17,7 @@ $.getJSON( "json/" + document.title + ".json", function( json ) {
                 <div class="ag-timeline-card_item">
                   <div class="ag-timeline-card_inner">
                     <div class="ag-timeline-card_img-box">
-                      <a href="`+level.url+`escenario.php?system=`+document.title+`&index=`+(index+1)+`"><img
+                      <a href="cases/escenario.php?system=`+document.title+`&index=`+(index+1)+`&url=`+level.url+`"><img
                         src="`+level.image+`"
                         class="ag-timeline-card_img"
                         width="640"
@@ -51,7 +51,7 @@ $.getJSON( "json/" + document.title + ".json", function( json ) {
                 <div class="ag-timeline-card_item">
                   <div class="ag-timeline-card_inner">
                     <div class="ag-timeline-card_img-box">
-                      <a href="`+level.url+`escenario.php?system=`+document.title+`&index=`+(index+1)+`"><img
+                      <a href="cases/escenario.php?system=`+document.title+`&index=`+(index+1)+`&url=`+level.url+`"><img
                         src="`+level.image+`"
                         class="ag-timeline-card_img"
                         width="640"

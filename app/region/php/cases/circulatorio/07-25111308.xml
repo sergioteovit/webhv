@@ -1,0 +1,40 @@
+<case group="50-59" illness="Insuficiencia venosa periférica" subject="" system="Circulatorio">
+    <intro>
+        Paciente masculino de 57 años, acude posterior a haber presentado sangrado espontáneo en pierna izquierda.
+    </intro>
+    <patient gender="Masculino" age="54"></patient>
+    <description>
+        Hombre de 54 años, acude posterior a haber presentado sangrado espontáneo en pierna izquierda y fue atendido en
+        su comunidad con sutura y referencia.
+    </description>
+    <history> Historia clínica
+    </history>
+    <examination> Exploración física
+    </examination>
+    <auscultation> Auscultación
+    </auscultation>
+    <tests> Laboratorios y otras pruebas
+    </tests>
+    <images> Imágenes
+    </images>
+    <treatment> Tratamiento
+    </treatment>
+    <questions>
+        <question>
+            <statement>¿Cuál es el diagnóstico más probable?</statement>
+            <options>
+                <option name="A">A</option>
+                <option name="B">B</option>
+                <option name="C">C</option>
+                <option name="D">D</option>
+            </options>
+            <reasoning>
+                <option name="A">Razonamiento A</option>
+                <option name="B">Razonamiento B</option>
+                <option name="C">Razonamiento C</option>
+                <option name="D">Razonamiento D</option>
+            </reasoning>
+            <answer>A</answer>
+        </question>
+    </questions>
+</case>
