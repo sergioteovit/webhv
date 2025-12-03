@@ -16,8 +16,8 @@
     </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css"/>
+    <link rel="shortcut icon" href="#"/>
     <style>
-        body { margin: 0; }
         canvas { display: block; }
         #overlay {
             position: absolute;
@@ -26,7 +26,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
+            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -45,13 +45,21 @@
             cursor: pointer;
         }
         .rounded-square {
-            width: 50%; /* Set the width of the square */
-            height: 30vh; /* Set the height of the square (equal to width for a square) */
+            width: 70%; /* Set the width of the square */
+            /*height: 30vh; /* Set the height of the square (equal to width for a square) */
             background-color: lightblue; /* Optional: Add a background color */
-            border-radius: 15px; /* Apply rounded corners */
-            font-size: clamp(1.5rem, 4vw, 3rem);
+            
+            font-size: clamp(1rem, 4vw, 3rem);
             text-align: center;
             font-family: Arial;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        
+        .image-square{
+            width: 70%;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
         }
     </style>
   </head>
@@ -60,18 +68,19 @@
     
     <?php
     $filecase = $system . "/" . $url . ".xml";
+    $caseicon = $system . "/" . $url . ".jpg";
 
     $xml = simplexml_load_file($filecase);
 
     if ($xml === false) {
-        echo "Failed to load XML file: $filecase<br>";
-        foreach (libxml_get_errors() as $error) {
+        echo "Estamos trabajando en este caso. Perdona el inconveniente.<br>";
+        /*foreach (libxml_get_errors() as $error) {
             echo $error->message . "<br>";
-        }
+        }*/
         exit();
     }
 
-    echo "<h1>Caso:</h1>";
+    /*echo "<h1>Caso:</h1>";
     foreach ($xml->attributes() as $attributeName => $attributeValue) {
         echo "<p>  " . $attributeName . ": " . $attributeValue . "</p><br>";
     }
@@ -84,16 +93,84 @@
     echo "<p> Images: " . $xml->images . "</p>";
     echo "<p> Treatment: " . $xml->treatment . "</p>";
 
-    echo "<h2>Preguntas:</h2>";
+    echo "<h2>Preguntas:</h2>";*/
+
+    function addCard($child)
+    {
+        $itemName = $child->getName();
+        
+        if ( $itemName == "intro" || $itemName == "questions") return;
+        
+        echo "<div class='box'>";
+        echo "<div class='body'>";
+        echo "<div class='imgContainer'>";
+        echo "<img src='images/".$itemName.".jpg' alt=''>";
+        echo "<div class='centered fs-6 text-white' >". $child['title'] ."</div>";
+        echo "</div>";
+        echo "<div class='content d-flex flex-column align-items-center justify-content-center'>";
+        echo "<div>";
+        
+        echo "<p class='fs-6 text-white'>" . $child . "</p>";
+
+        if ($itemName == "description") {
+            
+        } elseif ($itemName == "history") {
+            
+        } elseif ($itemName == "examination") {
+            
+        } elseif ($itemName == "auscultation") {
+            
+        } elseif ($itemName == "tests") {
+            
+        } elseif ($itemName == "images") {
+            
+        } elseif ($itemName == "treatment") {
+            
+        }
+
+        echo "</div>";
+        echo "</div>";
+        echo "</div>";
+        echo "</div>";
+    }
     ?>
     
     <div id="overlay">
         <p><?php echo $content; ?></p>
-        <div class="rounded-square" id="intro"> <?php echo $xml->description; ?> </div>
-        <button id="startButton" onclick="removeElementById('overlay')">Iniciar</button>
+        <img class="image-square" src="<?php echo $caseicon; ?>"/>
+        <div class="rounded-square" id="intro"> <?php echo $xml->intro; ?> </div>
+        <button id="startButton" onclick="removeElementById('overlay')">COMENZAR</button>
+    </div>
+    
+    <div id="sections">
+        <div class="container d-flex align-items-center justify-content-center flex-wrap">
+            <div class="fs-6 text-white" id="instructions">A continuación se presenta la información más relevante del caso. Una vez analizada la información, da clic en el botón Ponte a Prueba para resolver los cuestionamientos y ganar puntos.</div>
+            <?php foreach ($xml->children() as $child) {
+                addCard($child);
+            } ?>
+            <!--div class="box">
+                <div class="body">
+                    <div class="imgContainer">
+                        <img src="https://images.pexels.com/photos/3601422/pexels-photo-3601422.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                    </div>
+                    <div class="content d-flex flex-column align-items-center justify-content-center">
+                        <div>
+                            <h3 class="text-white fs-5">Post Title</h3>
+                            <p class="fs-6 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed cum neque, rem provident ex. Laboriosam perspiciatis modi eveniet in?</p>
+                        </div>
+                    </div>
+                </div>
+            </div-->
+        </div>
     </div>
     
     <script>
+        
+        const sectionsElement = document.getElementById("sections");
+        
+        sectionsElement.style.visibility = 'hidden';
+        sectionsElement.style.display = 'none';
+        
         function removeElementById(elementId) {
             const elementToRemove = document.getElementById(elementId);
             if (elementToRemove) { // Check if the element exists
@@ -101,50 +178,10 @@
             } else {
                 console.warn(`Element with ID '${elementId}' not found.`);
             }
+            sectionsElement.style.visibility = 'visible';
+            sectionsElement.style.display = 'block'; 
         }
     </script>
-    
-    <div class="container d-flex align-items-center justify-content-center flex-wrap">
-        <div class="box">
-            <div class="body">
-                <div class="imgContainer">
-                    <img src="https://images.pexels.com/photos/3601422/pexels-photo-3601422.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-                </div>
-                <div class="content d-flex flex-column align-items-center justify-content-center">
-                    <div>
-                        <h3 class="text-white fs-5">Post Title</h3>
-                        <p class="fs-6 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed cum neque, rem provident ex. Laboriosam perspiciatis modi eveniet in?</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="body">
-                <div class="imgContainer">
-                    <img src="https://images.pexels.com/photos/1532771/pexels-photo-1532771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-                </div>
-                <div class="content d-flex flex-column align-items-center justify-content-center">
-                    <div>
-                        <h3 class="text-white fs-5">Post Title</h3>
-                        <p class="fs-6 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed cum neque, rem provident ex. Laboriosam perspiciatis modi eveniet in?</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="box">
-            <div class="body">
-                <div class="imgContainer">
-                    <img src="https://images.pexels.com/photos/573238/pexels-photo-573238.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
-                </div>
-                <div class="content d-flex flex-column align-items-center justify-content-center">
-                    <div>
-                        <h3 class="text-white fs-5">Post Title</h3>
-                        <p class="fs-6 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed cum neque, rem provident ex. Laboriosam perspiciatis modi eveniet in?</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     
     <!--
     

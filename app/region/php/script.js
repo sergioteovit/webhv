@@ -2,7 +2,14 @@ $.getJSON( "json/" + document.title + ".json", function( json ) {
     document.getElementById("system_title").innerHTML = json.name;
   
     json.levels.forEach(function(level, index) {
+      
+      var iconfilename = "images/caso.png";
+      if ( level.image.length != 0 ) 
+        iconfilename = "cases/" + document.title + "/" + level.image + ".jpg";
+      
       if ( (index+1) % 2 != 0 ){
+        
+        
         document.getElementById("contenedor-json").innerHTML += `
               <div class="js-timeline_item ag-timeline_item">
                 <div class="ag-timeline-card_box">
@@ -18,7 +25,7 @@ $.getJSON( "json/" + document.title + ".json", function( json ) {
                   <div class="ag-timeline-card_inner">
                     <div class="ag-timeline-card_img-box">
                       <a href="cases/escenario.php?system=`+document.title+`&index=`+(index+1)+`&url=`+level.url+`"><img
-                        src="`+level.image+`"
+                        src="` + iconfilename + `"
                         class="ag-timeline-card_img"
                         width="640"
                         height="360" /></a>
@@ -52,7 +59,7 @@ $.getJSON( "json/" + document.title + ".json", function( json ) {
                   <div class="ag-timeline-card_inner">
                     <div class="ag-timeline-card_img-box">
                       <a href="cases/escenario.php?system=`+document.title+`&index=`+(index+1)+`&url=`+level.url+`"><img
-                        src="`+level.image+`"
+                        src="` + iconfilename + `"
                         class="ag-timeline-card_img"
                         width="640"
                         height="360" /></a>

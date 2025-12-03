@@ -1,15 +1,14 @@
-<case title="Caso" group="50-59" illness="Insuficiencia venosa periférica" subject="" system="Circulatorio">
+<case title="Caso" group="XX a YY" illness="Padecimiento" subject="" system="Respiratorio">
     <intro title="Introducción">
-        Paciente masculino de 57 años, acude a consultorio después de haber presentado sangrado espontáneo en pierna izquierda.
+        Paciente masculino de 55 años, con antecedentes de tabaquismo, acude al consultorio por tos seca, dolor muscular, dolor de pecho, fiebre y falta de aire.
     </intro>
     <description title="Descripción del caso">
-        Hombre de 54 años, acude posterior a haber presentado sangrado espontáneo en pierna izquierda y fue atendido en
-        su comunidad con sutura y referencia.
+        Aquí colocar la descripción del caso 
     </description>
-    <patient title="Información del paciente" gender="Masculino" age="54">Paciente Masculino de 54 años</patient>
+    <patient title="Información del paciente" gender="" age="">Paciente ... de ... años</patient>
     <history title="Historia Clínica"> Historia clínica
     </history>
-    <examination title="Exploración física"> Peso de 102 kg, talla 1,62 m. Claudicación a expensas de acortamiento de pierna izquierda. La vena safena mayor izquierda presenta reflujo mayor de 6 cm y a nivel del conducto aductor (canal de Hunter) presenta un arco anterior, la vena safena menor con diámetro de dilatación de 6 milímetros. Pierna derecha con relujo safeno, en todo su trayecto, sin cambios de coloración en piel y edema en tobillos.
+    <examination title="Exploración física"> Exploración física
     </examination>
     <auscultation title="Auscultación"> Auscultación
     </auscultation>

@@ -1,22 +1,39 @@
-<script>
-    <intro>	Presentación del caso
+<case title="Caso" group="XX a YY" illness="Padecimiento" subject="" system="">
+    <intro title="Introducción">
+        Aquí colocar la introducción
     </intro>
-    <questions>
-    	<question>
-    		<statement>Pregunta 1</statement>
-    		<options>
-    			<option>A</option>
-    			<option>B</option>
-    			<option>C</option>
-    			<option>D</option>
-    		</options>
-    		<reasoning>
-    			<option>Razonamiento A</option>
-    			<option>Razonamiento B</option>
-    			<option>Razonamiento C</option>
-    			<option>Razonamiento D</option>
-    		</reasoning>
-    		<answer>A</answer>
-    	</question>
+    <description title="Descripción del caso">
+        Aquí colocar la descripción del caso 
+    </description>
+    <patient title="Información del paciente" gender="" age="">Paciente ... de ... años</patient>
+    <history title="Historia Clínica"> Historia clínica
+    </history>
+    <examination title="Exploración física"> Exploración física
+    </examination>
+    <auscultation title="Auscultación"> Auscultación
+    </auscultation>
+    <tests title="Laboratorios y otras pruebas"> Laboratorios y otras pruebas
+    </tests>
+    <images title="Imágenes"> Imágenes
+    </images>
+    <treatment title="Tratamiento"> Tratamiento
+    </treatment>
+    <questions title="Preguntas">
+        <question title="Pregunta">
+            <statement title="Sentencia">¿Cuál es el diagnóstico más probable?</statement>
+            <options title="Opciones">
+                <option title="Opción" name="A">A</option>
+                <option title="Opción" name="B">B</option>
+                <option title="Opción" name="C">C</option>
+                <option title="Opción" name="D">D</option>
+            </options>
+            <reasoning title="Razonamientos">
+                <option title="Opción" name="A">Razonamiento A</option>
+                <option title="Opción" name="B">Razonamiento B</option>
+                <option title="Opción" name="C">Razonamiento C</option>
+                <option title="Opción" name="D">Razonamiento D</option>
+            </reasoning>
+            <answer title="Respuesta">A</answer>
+        </question>
     </questions>
-</script>
+</case>

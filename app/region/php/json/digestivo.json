@@ -5,13 +5,11 @@
             "name": "Caso 1",
             "complexity": "1",
             "areas": [
-                "Anatomía",
-                "Embriología Humana",
-                "Bioquímica"
+                "Anatomía"
             ],
-            "image": "images/caso.png",
+            "image": "10-25111304",
             "brief": "Paciente se presenta al área de consultorio...",
-            "url": "cases/"
+            "url": "10-25111304"
         },
         {
             "name": "Caso 2",
@@ -21,7 +19,7 @@
                 "Embriología Humana",
                 "Bioquímica"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -33,7 +31,7 @@
                 "Embriología Humana",
                 "Bioquímica"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -45,7 +43,7 @@
                 "Embriología Humana",
                 "Bioquímica"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -57,7 +55,7 @@
                 "Embriología Humana",
                 "Bioquímica"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -69,7 +67,7 @@
                 "Embriología Humana",
                 "Bioquímica"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -81,7 +79,7 @@
                 "Embriología Humana",
                 "Bioquímica"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -93,7 +91,7 @@
                 "Embriología Humana",
                 "Bioquímica"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -105,7 +103,7 @@
                 "Embriología Humana",
                 "Bioquímica"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -117,7 +115,7 @@
                 "Embriología Humana",
                 "Bioquímica"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -129,7 +127,7 @@
                 "Embriología Humana",
                 "Bioquímica"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -141,7 +139,7 @@
                 "Embriología Humana",
                 "Bioquímica"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -153,7 +151,7 @@
                 "Embriología Humana",
                 "Bioquímica"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -165,7 +163,7 @@
                 "Embriología Humana",
                 "Bioquímica"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -177,7 +175,7 @@
                 "Embriología Humana",
                 "Bioquímica"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -190,7 +188,7 @@
                 "Histología Médica",
 		        "Anatomía"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -203,7 +201,7 @@
                 "Histología Médica",
 		        "Anatomía"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -216,7 +214,7 @@
                 "Histología Médica",
 		        "Anatomía"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -229,7 +227,7 @@
                 "Histología Médica",
 		        "Anatomía"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -242,7 +240,7 @@
                 "Histología Médica",
 		        "Anatomía"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -255,7 +253,7 @@
                 "Histología Médica",
 		        "Anatomía"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -268,7 +266,7 @@
                 "Histología Médica",
 		        "Anatomía"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -281,7 +279,7 @@
                 "Histología Médica",
 		        "Anatomía"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -294,7 +292,7 @@
                 "Histología Médica",
 		        "Anatomía"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -307,7 +305,7 @@
                 "Histología Médica",
 		        "Anatomía"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -320,7 +318,7 @@
                 "Histología Médica",
 		        "Anatomía"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -333,7 +331,7 @@
                 "Histología Médica",
 		        "Anatomía"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -346,7 +344,7 @@
                 "Histología Médica",
 		        "Anatomía"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -359,7 +357,7 @@
                 "Histología Médica",
 		        "Anatomía"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -372,7 +370,7 @@
                 "Histología Médica",
 		        "Anatomía"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -386,7 +384,7 @@
 		        "Anatomía",
                 "Fisiología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -400,7 +398,7 @@
 		        "Anatomía",
                 "Fisiología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -414,7 +412,7 @@
 		        "Anatomía",
                 "Fisiología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -428,7 +426,7 @@
 		        "Anatomía",
                 "Fisiología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -442,7 +440,7 @@
 		        "Anatomía",
                 "Fisiología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -456,7 +454,7 @@
 		        "Anatomía",
                 "Fisiología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -470,7 +468,7 @@
 		        "Anatomía",
                 "Fisiología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -484,7 +482,7 @@
 		        "Anatomía",
                 "Fisiología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -498,7 +496,7 @@
 		        "Anatomía",
                 "Fisiología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -512,7 +510,7 @@
 		        "Anatomía",
                 "Fisiología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -526,7 +524,7 @@
 		        "Anatomía",
                 "Fisiología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -540,7 +538,7 @@
 		        "Anatomía",
                 "Fisiología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -554,7 +552,7 @@
 		        "Anatomía",
                 "Fisiología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -568,7 +566,7 @@
 		        "Anatomía",
                 "Fisiología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -582,7 +580,7 @@
 		        "Anatomía",
                 "Fisiología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -597,7 +595,7 @@
                 "Fisiología",
                 "Farmacología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -612,7 +610,7 @@
                 "Fisiología",
                 "Farmacología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -627,7 +625,7 @@
                 "Fisiología",
                 "Farmacología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -642,7 +640,7 @@
                 "Fisiología",
                 "Farmacología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -657,7 +655,7 @@
                 "Fisiología",
                 "Farmacología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -672,7 +670,7 @@
                 "Fisiología",
                 "Farmacología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -687,7 +685,7 @@
                 "Fisiología",
                 "Farmacología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -702,7 +700,7 @@
                 "Fisiología",
                 "Farmacología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -717,7 +715,7 @@
                 "Fisiología",
                 "Farmacología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -732,7 +730,7 @@
                 "Fisiología",
                 "Farmacología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -747,7 +745,7 @@
                 "Fisiología",
                 "Farmacología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -762,7 +760,7 @@
                 "Fisiología",
                 "Farmacología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -777,7 +775,7 @@
                 "Fisiología",
                 "Farmacología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -792,7 +790,7 @@
                 "Fisiología",
                 "Farmacología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         },
@@ -807,7 +805,7 @@
                 "Fisiología",
                 "Farmacología"
             ],
-            "image": "images/caso.png",
+            "image": "",
             "brief": "Paciente se presenta al área de consultorio...",
             "url": "cases/"
         }
