@@ -3,33 +3,32 @@
         Paciente masculino de 57 años, acude a consultorio después de haber presentado sangrado espontáneo en pierna izquierda.
     </intro>
     <description title="Descripción del caso">
-        Hombre de 54 años, acude posterior a haber presentado sangrado espontáneo en pierna izquierda y fue atendido en
-        su comunidad con sutura y referencia.
+        Paciente masculino de 57 años, acude a consultorio después de haber presentado sangrado espontáneo en pierna izquierda. Fue atendido en su comunidad con sutura y referencia.
     </description>
-    <patient title="Información del paciente" gender="Masculino" age="54">Paciente Masculino de 54 años</patient>
-    <history title="Historia Clínica"> Historia clínica
+    <patient title="Información del paciente" gender="Masculino" age="54">Se trata de un paciente masculino de 54 años</patient>
+    <history title="Historia Clínica"> No se cuenta con la información de la historia clínica.
     </history>
-    <examination title="Exploración física"> Peso de 102 kg, talla 1,62 m. Claudicación a expensas de acortamiento de pierna izquierda. La vena safena mayor izquierda presenta reflujo mayor de 6 cm y a nivel del conducto aductor (canal de Hunter) presenta un arco anterior, la vena safena menor con diámetro de dilatación de 6 milímetros. Pierna derecha con relujo safeno, en todo su trayecto, sin cambios de coloración en piel y edema en tobillos.
+    <examination title="Exploración física"> Peso de 102 kg, talla 1,62 m. Claudicación a expensas de acortamiento de pierna izquierda. La vena safena mayor izquierda presenta reflujo mayor de 6 cm y a nivel del conducto aductor (canal de Hunter) presenta un arco anterior, la vena safena menor con diámetro de dilatación de 6 milímetros. Pierna derecha con reflujo safeno, en todo su trayecto, sin cambios de coloración en piel y edema en tobillos.
     </examination>
-    <auscultation title="Auscultación"> Auscultación
+    <auscultation title="Auscultación"> No se cuenta con la información de la auscultación.
     </auscultation>
-    <tests title="Laboratorios y otras pruebas"> Laboratorios y otras pruebas
+    <tests title="Laboratorios y otras pruebas"> No se cuenta con laboratorios ni otras pruebas.
     </tests>
-    <images title="Imágenes"> Imágenes
+    <images title="Imágenes"> No se cuenta con estudios de imagen.
     </images>
-    <treatment title="Tratamiento"> Tratamiento
+    <treatment title="Tratamiento"> No se cuenta con información del tratamiento.
     </treatment>
     <questions title="Preguntas">
         <question title="Pregunta">
             <statement title="Sentencia">¿Cuál es el diagnóstico más probable?</statement>
             <options title="Opciones">
-                <option title="Opción" name="A">A</option>
+                <option title="Opción" name="A">Enfermedad venosa crónica</option>
                 <option title="Opción" name="B">B</option>
                 <option title="Opción" name="C">C</option>
                 <option title="Opción" name="D">D</option>
             </options>
             <reasoning title="Razonamientos">
-                <option title="Opción" name="A">Razonamiento A</option>
+                <option title="Opción" name="A">La enfermedad venosa crónica (EVC) es la enfermedad vascular más frecuente en el ser humano, se define como cualquier anormalidad morfológica y/o funcional del sistema venoso.</option>
                 <option title="Opción" name="B">Razonamiento B</option>
                 <option title="Opción" name="C">Razonamiento C</option>
                 <option title="Opción" name="D">Razonamiento D</option>

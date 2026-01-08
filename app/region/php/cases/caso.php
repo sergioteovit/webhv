@@ -80,21 +80,27 @@
     }
     ?>
     
-    <div id="subtitle-container">Vamos a abordar un nuevo caso. Da clic en alguno de los botones de abajo.</div>
+    <div id="subtitle-container">
+        <div id="subtitlesBox">Vamos a abordar un nuevo caso. Da clic en alguno de los botones de abajo.
+        </div>
+        <button type="button" class="btn btn-primary">
+          Puntos <span class="badge text-bg-danger fs-4" id="rankCounter">100</span>
+        </button>
+    </div>
     <div id="caseButtons">
         <button type="button" class="btn btn-primary" id="introButton">Instrucciones</button>
         <button type="button" class="btn btn-primary" id="caseButton">Información General del Caso</button>
-        <button type="button" class="btn btn-info" id="ipButton">Información del paciente</button>
-        <button type="button" class="btn btn-info" id="hcButton">Historia Clínica</button>
-        <button type="button" class="btn btn-info" id="efButton">Exploración física</button>
-        <button type="button" class="btn btn-info" id="acButton">Auscultación</button>
-        <button type="button" class="btn btn-info" id="lpButton">Laboratorios y otras pruebas</button>
-        <button type="button" class="btn btn-info" id="imButton">Imagen</button>
-        <button type="button" class="btn btn-info" id="tmButton">Tratamiento</button>
+        <button type="button" class="btn btn-info position-relative" id="ipButton">Información del paciente<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
+        <button type="button" class="btn btn-info position-relative" id="hcButton">Historia Clínica<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
+        <button type="button" class="btn btn-info position-relative" id="efButton">Exploración física<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
+        <button type="button" class="btn btn-info position-relative" id="acButton">Auscultación<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
+        <button type="button" class="btn btn-info position-relative" id="lpButton">Laboratorios y otras pruebas<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
+        <button type="button" class="btn btn-info position-relative" id="imButton">Imagen<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
+        <button type="button" class="btn btn-info position-relative" id="tmButton">Tratamiento<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
         <button type="button" class="btn btn-success" id="runButton">Ponte a Prueba</button>
     </div>
     <div id="infoDiv">
-        <img class="image-square" src="<?php echo $caseicon; ?>" width="100%"/>
+        <img class="image-square" id="imgElement" src="/" width="100%"/>
     </div>
       
     <script type="importmap">
@@ -115,8 +121,8 @@
       
       <script>
           
-          const switchElement = document.getElementById("infoDiv");
-          switchElement.hidden = true;
+        const switchElement = document.getElementById("infoDiv");
+        switchElement.hidden = true;
           
         document.getElementById("caseButton").addEventListener("click", playCase, false);
         document.getElementById("introButton").addEventListener("click", instructions, false);
@@ -131,62 +137,64 @@
         document.getElementById("runButton").addEventListener("click", runCase, false);
           
           function playCase(){
-    
-            let texto = <?php echo json_encode(strval($xml->description)); ?>;
-    
-            playText(texto);
-              
+              let texto = <?php echo json_encode(strval($xml->description)); ?>;
+              playText(texto);
               switchElement.hidden = false;
+              const imageElement = document.getElementById("imgElement");
+              imageElement.src = <?php echo json_encode($caseicon); ?>;
               
           }
           
           function ipCase(){
               switchElement.hidden = true;
+              if (!checkPoints()) return;
               let texto = <?php echo json_encode(strval($xml->patient)); ?>;
-    
-            playText(texto);
+              playText(texto);
+              
           }
           
           function hcCase(){
               switchElement.hidden = true;
+              if (!checkPoints()) return;
               let texto = <?php echo json_encode(strval($xml->history)); ?>;
-    
-            playText(texto);
+              playText(texto);
           }
           
           function efCase(){
               switchElement.hidden = true;
+              if (!checkPoints()) return;
               let texto = <?php echo json_encode(strval($xml->examination)); ?>;
-    
-            playText(texto);
+              playText(texto);
           }
           
           function acCase(){
               switchElement.hidden = true;
+              if (!checkPoints()) return;
               let texto = <?php echo json_encode(strval($xml->auscultation)); ?>;
-    
-            playText(texto);
+              playText(texto);
           }
           
           function lpCase(){
               switchElement.hidden = true;
+              if (!checkPoints()) return;
               let texto = <?php echo json_encode(strval($xml->tests)); ?>;
-    
-            playText(texto);
+              playText(texto);
           }
           
           function imCase(){
+              
               switchElement.hidden = true;
+              if (!checkPoints()) return;
               let texto = <?php echo json_encode(strval($xml->images)); ?>;
-    
-            playText(texto);
+              playText(texto);
           }
           
           function tmCase(){
+              
               switchElement.hidden = true;
+              if (!checkPoints()) return;
               let texto = <?php echo json_encode(strval($xml->treatment)); ?>;
-    
-            playText(texto);
+              playText(texto);
           }
           
           function runCase(){
@@ -199,6 +207,10 @@
 
                 playText(texto);
             }
+          
+          function insufficientPoints(){
+              playText("Tus puntos se han agotado, da clic en Ponte a Prueba o reinicia el caso.");
+          }
 
             function playText(texto) {
                 window.speechSynthesis.cancel();
@@ -208,10 +220,32 @@
                 mensaje.rate = 1.0;
                 mensaje.pitch = 1;
 
-                document.getElementById("subtitle-container").innerHTML = texto;
+                document.getElementById("subtitlesBox").innerHTML = texto;
 
                 window.speechSynthesis.speak(mensaje);
             }
+          
+          function deductPoints(){
+            let counterBox = document.getElementById("rankCounter"); 
+            let valueCounter = Number(counterBox.innerText);
+            valueCounter-=10;
+            counterBox.innerHTML = valueCounter;
+          }
+          
+          function checkPoints(){
+              let counterBox = document.getElementById("rankCounter"); 
+              let valueCounter = Number(counterBox.innerText);
+              if ( valueCounter<=0 )
+              {
+                  insufficientPoints();
+                  return false;
+              }
+              else {
+                  deductPoints();
+              }
+              return true;
+          }
+          
       </script>
       
 </body>
