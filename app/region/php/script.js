@@ -5,7 +5,7 @@ $.getJSON( "json/" + document.title + ".json", function( json ) {
       
       var iconfilename = "images/caso.png";
       if ( level.image.length != 0 ) 
-        iconfilename = "cases/" + document.title + "/" + level.image + ".jpg";
+        iconfilename = "cases/sistemas/images/" + level.image + ".jpg";
       
       if ( (index+1) % 2 != 0 ){
         
@@ -24,7 +24,7 @@ $.getJSON( "json/" + document.title + ".json", function( json ) {
                 <div class="ag-timeline-card_item">
                   <div class="ag-timeline-card_inner">
                     <div class="ag-timeline-card_img-box">
-                      <a href="cases/escenario.php?system=`+document.title+`&index=`+(index+1)+`&url=`+level.url+`"><img
+                      <a href="cases/caso.php?system=`+document.title+`&index=`+(index+1)+`&url=`+level.url+`"><img
                         src="` + iconfilename + `"
                         class="ag-timeline-card_img"
                         width="640"
@@ -58,7 +58,7 @@ $.getJSON( "json/" + document.title + ".json", function( json ) {
                 <div class="ag-timeline-card_item">
                   <div class="ag-timeline-card_inner">
                     <div class="ag-timeline-card_img-box">
-                      <a href="cases/escenario.php?system=`+document.title+`&index=`+(index+1)+`&url=`+level.url+`"><img
+                      <a href="cases/caso.php?system=`+document.title+`&index=`+(index+1)+`&url=`+level.url+`"><img
                         src="` + iconfilename + `"
                         class="ag-timeline-card_img"
                         width="640"

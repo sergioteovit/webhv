@@ -67,8 +67,8 @@
   <body>
     
     <?php
-    $filecase = $system . "/" . $url . ".xml";
-    $caseicon = $system . "/" . $url . ".jpg";
+    $filecase = "sistemas/" . $system . "/" . $url . ".xml";
+    $caseicon = "sistemas/images/" . $url . ".jpg";
 
     $xml = simplexml_load_file($filecase);
 
@@ -98,34 +98,29 @@
     function addCard($child)
     {
         $itemName = $child->getName();
-        
-        if ( $itemName == "intro" || $itemName == "questions") return;
-        
+
+        if ($itemName == "intro" || $itemName == "questions") {
+            return;
+        }
+
         echo "<div class='box'>";
         echo "<div class='body'>";
         echo "<div class='imgContainer'>";
-        echo "<img src='images/".$itemName.".jpg' alt=''>";
-        echo "<div class='centered fs-6 text-white' >". $child['title'] ."</div>";
+        echo "<img src='images/" . $itemName . ".jpg' alt=''>";
+        echo "<div class='centered fs-6 text-white' >" . $child["title"] . "</div>";
         echo "</div>";
         echo "<div class='content d-flex flex-column align-items-center justify-content-center'>";
         echo "<div>";
-        
+
         echo "<p class='fs-6 text-white'>" . $child . "</p>";
 
         if ($itemName == "description") {
-            
         } elseif ($itemName == "history") {
-            
         } elseif ($itemName == "examination") {
-            
         } elseif ($itemName == "auscultation") {
-            
         } elseif ($itemName == "tests") {
-            
         } elseif ($itemName == "images") {
-            
         } elseif ($itemName == "treatment") {
-            
         }
 
         echo "</div>";
@@ -145,6 +140,7 @@
     <div id="sections">
         <div class="container d-flex align-items-center justify-content-center flex-wrap">
             <div class="fs-6 text-white" id="instructions">A continuación se presenta la información más relevante del caso. Una vez analizada la información, da clic en el botón Ponte a Prueba para resolver los cuestionamientos y ganar puntos.</div>
+            <button onclick="hablar()">Convertir Texto a Voz</button>
             <?php foreach ($xml->children() as $child) {
                 addCard($child);
             } ?>
@@ -181,6 +177,16 @@
             sectionsElement.style.visibility = 'visible';
             sectionsElement.style.display = 'block'; 
         }
+        
+        function hablar() {
+            let mensaje = new SpeechSynthesisUtterance("Paciente masculino de 40 años de edad, acude a consulta por dolor punzante y ardor en la parte superior del abdomen, que se irradia hacia la espalda. Refiere sensación de llenado e hinchazón del abdomen y pérdida del apetito, el dolor se agrava con comidas condimentadas e ingestión de bebidas alcohólicas. Presenta agruras y flatulencia. El malestar es de reciente aparición, con una evolución de 2 semanas. Dolor mayor en región abdominal, específicamente en el Epigastrio. Se sospecha de gastritis.");
+            mensaje.lang = 'es-US';
+            mensaje.rate = 1.0;
+            mensaje.pitch = 1;
+            
+            window.speechSynthesis.speak(mensaje);
+        }
+        
     </script>
     
     <!--
