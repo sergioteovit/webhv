@@ -101,6 +101,56 @@
     </div>
     <div id="infoDiv">
         <img class="image-square" id="imgElement" src="/" width="100%"/>
+        
+        <div class="carousel slide carousel-fade" id="questionElement">
+          <div class="carousel-inner">
+              
+            <!--div class="carousel-item active">
+              <img src="..." class="d-block w-100" alt="...">
+                <div class="mb-3" >
+                  <label class="form-label">Select one option:</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioOptions" id="radio1" value="option1" checked>
+                    <label class="form-check-label" for="radio1">
+                      Option 1
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioOptions" id="radio2" value="option2">
+                    <label class="form-check-label" for="radio2">
+                      Option 2
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radioOptions" id="radio3" value="option3">
+                    <label class="form-check-label" for="radio3">
+                      Option 3
+                    </label>
+                  </div>
+                </div>
+            </div-->
+              <?php
+                foreach ($xml->question as $question) {
+                    echo "<div class='carousel-item'>";
+                    echo "<div class='mb-3'>";
+                    echo "<h1>".$question->statement."</h1>";
+                    echo "</div>";
+                    echo "</div>";
+                    echo "<h3>INDICADOR: ".$question->statement."</h3>";
+                }
+                
+              ?>
+          </div>
+          
+          <button class="carousel-control-prev" type="button" data-bs-target="#questionElement" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#questionElement" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
     </div>
       
     <script type="importmap">
@@ -142,6 +192,8 @@
               switchElement.hidden = false;
               const imageElement = document.getElementById("imgElement");
               imageElement.src = <?php echo json_encode($caseicon); ?>;
+              const questionElement = document.getElementById("questionElement");
+              questionElement.hidden = true;
               
           }
           
@@ -198,7 +250,10 @@
           }
           
           function runCase(){
-              switchElement.hidden = true;
+              switchElement.hidden = false;
+              const imageElement = document.getElementById("imgElement");
+              imageElement.src = <?php echo json_encode($caseicon); ?>;
+              questionElement.hidden = false;
           }
           
           function instructions() {
