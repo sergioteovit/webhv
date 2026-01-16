@@ -70,7 +70,7 @@ function init() {
 
 //
 function loadHDR() {
-    const rgbeLoader = new RGBELoader();
+    const rgbeLoader = new HDRLoader();
     rgbeLoader.load("hdr/qwantani_morning_puresky_2k.hdr", (texture) => {
         // Code to execute after the HDR texture is loaded
         texture.mapping = THREE.EquirectangularReflectionMapping;
