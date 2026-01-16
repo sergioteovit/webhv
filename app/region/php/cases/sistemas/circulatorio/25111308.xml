@@ -35,5 +35,21 @@
             </reasoning>
             <answer title="Respuesta">A</answer>
         </question>
+        <question title="Pregunta">
+            <statement title="Sentencia">¿Cuál es la segunda pregunta?</statement>
+            <options title="Opciones">
+                <option title="Opción" name="A">A</option>
+                <option title="Opción" name="B">B</option>
+                <option title="Opción" name="C">C</option>
+                <option title="Opción" name="D">D</option>
+            </options>
+            <reasoning title="Razonamientos">
+                <option title="Opción" name="A">La enfermedad venosa crónica (EVC) es la enfermedad vascular más frecuente en el ser humano, se define como cualquier anormalidad morfológica y/o funcional del sistema venoso.</option>
+                <option title="Opción" name="B">Razonamiento B</option>
+                <option title="Opción" name="C">Razonamiento C</option>
+                <option title="Opción" name="D">Razonamiento D</option>
+            </reasoning>
+            <answer title="Respuesta">A</answer>
+        </question>
     </questions>
 </case>

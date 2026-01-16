@@ -102,43 +102,29 @@
     <div id="infoDiv">
         <img class="image-square" id="imgElement" src="/" width="100%"/>
         
-        <div class="carousel slide carousel-fade" id="questionElement">
+        <div class="carousel slide" id="questionElement">
           <div class="carousel-inner">
               
-            <!--div class="carousel-item active">
-              <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-item active">
+              <!--img src="..." class="d-block w-100" alt="..."-->
                 <div class="mb-3" >
-                  <label class="form-label">Select one option:</label>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="radioOptions" id="radio1" value="option1" checked>
-                    <label class="form-check-label" for="radio1">
-                      Option 1
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="radioOptions" id="radio2" value="option2">
-                    <label class="form-check-label" for="radio2">
-                      Option 2
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="radioOptions" id="radio3" value="option3">
-                    <label class="form-check-label" for="radio3">
-                      Option 3
-                    </label>
-                  </div>
+                  <label class="form-label">Da clic en las flechas para continuar con las interaciones.</label>
                 </div>
-            </div-->
+            </div>
               <?php
-                foreach ($xml->question as $question) {
-                    echo "<div class='carousel-item'>";
-                    echo "<div class='mb-3'>";
-                    echo "<h1>".$question->statement."</h1>";
-                    echo "</div>";
-                    echo "</div>";
-                    echo "<h3>INDICADOR: ".$question->statement."</h3>";
-                }
-                
+              foreach ($xml->questions->children() as $question) {
+                  echo "<div class='carousel-item'>";
+                  echo "<div class='mb-3'>";
+                  echo "<label>".$question->statement."</label>";
+                  foreach ($question->options->children() as $key => $option){
+                    echo "<div class='form-check'>";
+                    echo "<input class='form-check-input' type='radio' name='radioOptions' id='radio".$key."' value='option". $key ."'/>";
+                    echo "<label class='form-check-label' for='radio".$key."'>".$option."</label>";
+                    echo "</div>";                
+                  }
+                  echo "</div>";
+                  echo "</div>";
+              }
               ?>
           </div>
           
