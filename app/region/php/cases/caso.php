@@ -90,18 +90,46 @@
           Puntos <span class="badge text-bg-danger fs-4" id="rankCounter">100</span>
         </button>
     </div>
+    <div class="modal" id="modalPopup" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered"> 
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="myModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" id="myModalBody">
+                This is a vertically centered modal.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <!--button type="button" class="btn btn-primary">Save changes</button-->
+              </div>
+            </div>
+        </div>
+    </div>
     <div id="caseButtons">
-        <button type="button" class="btn btn-primary" id="introButton">Instrucciones</button>
+        
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPopup" id="introButton">Instrucciones</button>
+        
         <button type="button" class="btn btn-primary" id="caseButton">Información General del Caso</button>
-        <button type="button" class="btn btn-info position-relative" id="ipButton">Información del paciente<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
-        <button type="button" class="btn btn-info position-relative" id="hcButton">Historia Clínica<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
-        <button type="button" class="btn btn-info position-relative" id="efButton">Exploración física<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
-        <button type="button" class="btn btn-info position-relative" id="acButton">Auscultación<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
-        <button type="button" class="btn btn-info position-relative" id="lpButton">Laboratorios y otras pruebas<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
-        <button type="button" class="btn btn-info position-relative" id="imButton">Imagen<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
-        <button type="button" class="btn btn-info position-relative" id="tmButton">Tratamiento<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
+        
+        <button type="button" class="btn btn-info position-relative" data-bs-toggle="modal" data-bs-target="#modalPopup" id="ipButton">Información del paciente<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
+        
+        <button type="button" class="btn btn-info position-relative" data-bs-toggle="modal" data-bs-target="#modalPopup" id="hcButton">Historia Clínica<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
+        
+        <button type="button" class="btn btn-info position-relative" data-bs-toggle="modal" data-bs-target="#modalPopup" id="efButton">Exploración física<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
+        
+        <button type="button" class="btn btn-info position-relative" data-bs-toggle="modal" data-bs-target="#modalPopup" id="acButton">Auscultación<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
+        
+        <button type="button" class="btn btn-info position-relative" data-bs-toggle="modal" data-bs-target="#modalPopup" id="lpButton">Laboratorios y otras pruebas<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
+        
+        <button type="button" class="btn btn-info position-relative" data-bs-toggle="modal" data-bs-target="#modalPopup" id="imButton">Imagen<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
+        
+        <button type="button" class="btn btn-info position-relative" data-bs-toggle="modal" data-bs-target="#modalPopup" id="tmButton">Tratamiento<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
+        
         <button type="button" class="btn btn-success" id="runButton">Ponte a Prueba</button>
     </div>
+    
     <div id="infoDiv">
         <button type="button" class="btn-close btn-close-white" aria-label="Close" id="closeButton"></button>
         <br/>
@@ -177,7 +205,7 @@
               autostart: false,
               onFinish  : function () { alert("Se agotó el tiempo :'/ "); }
             });
-        countdownBar.start();
+        countdownBar.stop();
           
         document.getElementById("caseButton").addEventListener("click", playCase, false);
         document.getElementById("introButton").addEventListener("click", instructions, false);
@@ -206,6 +234,10 @@
         }
           
         function ipCase(){
+            
+            let modal = document.getElementById("myModalLabel");
+            modal.innerText = "Información del paciente";
+            
             switchElement.hidden = true;
             if (!checkPoints()) return;
             let texto = <?php echo json_encode(strval($xml->patient)); ?>;
@@ -213,6 +245,10 @@
         }
 
         function hcCase(){
+            
+            let modal = document.getElementById("myModalLabel");
+            modal.innerText = "Historia Clínica";
+            
             switchElement.hidden = true;
             if (!checkPoints()) return;
             let texto = <?php echo json_encode(strval($xml->history)); ?>;
@@ -220,6 +256,10 @@
         }
 
         function efCase(){
+            
+            let modal = document.getElementById("myModalLabel");
+            modal.innerText = "Exploración física";
+            
             switchElement.hidden = true;
             if (!checkPoints()) return;
             let texto = <?php echo json_encode(strval($xml->examination)); ?>;
@@ -227,6 +267,10 @@
         }
 
         function acCase(){
+            
+            let modal = document.getElementById("myModalLabel");
+            modal.innerText = "Auscultación";
+            
             switchElement.hidden = true;
             if (!checkPoints()) return;
             let texto = <?php echo json_encode(strval($xml->auscultation)); ?>;
@@ -234,6 +278,10 @@
         }
 
         function lpCase(){
+            
+            let modal = document.getElementById("myModalLabel");
+            modal.innerText = "Laboratorios y otras pruebas";
+            
             switchElement.hidden = true;
             if (!checkPoints()) return;
             let texto = <?php echo json_encode(strval($xml->tests)); ?>;
@@ -241,6 +289,10 @@
         }
 
         function imCase(){
+            
+            let modal = document.getElementById("myModalLabel");
+            modal.innerText = "Imagen";
+            
             switchElement.hidden = true;
             if (!checkPoints()) return;
             let texto = <?php echo json_encode(strval($xml->images)); ?>;
@@ -248,6 +300,10 @@
         }
 
         function tmCase(){
+            
+            let modal = document.getElementById("myModalLabel");
+            modal.innerText = "Tratamiento";
+            
             switchElement.hidden = true;
             if (!checkPoints()) return;
             let texto = <?php echo json_encode(strval($xml->treatment)); ?>;
@@ -275,6 +331,10 @@
         }
           
         function instructions() {
+            
+            let modal = document.getElementById("myModalLabel");
+            modal.innerText = "Instrucciones";
+            
             let texto =
                 "Para comenzar, puedes dar clic en el botón Información General del Caso para escuchar la descripción. Posteriormente podrás solicitarme datos más detallados. Cada vez que consultes información, gastarás puntos, por lo que elige bien los datos a consultar. Una vez estudiado el caso, da clic en el botón Ponte a Prueba, para resolver los cuestionamientos y ganar puntos, que se sumarán a tu ranking.";
 
@@ -292,8 +352,9 @@
             mensaje.lang = "es-US";
             mensaje.rate = 1.0;
             mensaje.pitch = 1;
-
-            document.getElementById("subtitlesBox").innerHTML = texto;
+            
+            let modal = document.getElementById("myModalBody");
+            modal.innerHTML = texto;
 
             window.speechSynthesis.speak(mensaje);
         }
