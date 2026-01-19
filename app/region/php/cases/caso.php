@@ -15,7 +15,9 @@
     } ?>
     </title>
     <link rel="shortcut icon" href="#"/>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <style>
         #subtitle-container {
             position: absolute;
@@ -61,10 +63,11 @@
             border-radius: 5px;
             font-family: sans-serif;
             text-align: center;
-            z-index: 1;
+            z-index: 9999;
             pointer-events: auto;
             width: 100%;
-            height: 100vh;
+            height: 100vh; 
+            
         }
     </style>
 </head>
@@ -72,24 +75,55 @@
 <body>
       
     <?php
-        $filecase = "sistemas/" . $system . "/" . $url . ".xml";
-        $caseicon = "sistemas/images/" . $url . ".jpg";
+    $filecase = "sistemas/" . $system . "/" . $url . ".xml";
+    $caseicon = "sistemas/images/" . $url . ".jpg";
 
-        $xml = simplexml_load_file($filecase);
+    $xml = simplexml_load_file($filecase);
 
-        if ($xml === false) {
-            echo "Estamos trabajando en este caso. Perdona el inconveniente.<br>";
-            exit();
-        }
+    if ($xml === false) {
+        echo "Estamos trabajando en este caso. Perdona el inconveniente.<br>";
+        exit();
+    }
     ?>
-    
-    <div id="subtitle-container">
-        <div id="subtitlesBox">Vamos a abordar un nuevo caso. Da clic en alguno de los botones de abajo.
-        </div>
-        <button type="button" class="btn btn-primary">
-          Puntos <span class="badge text-bg-danger fs-4" id="rankCounter">100</span>
+    <nav class="navbar fixed-top bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <!--div class="bg-dark text-white fw-semibold text-center">Vamos a abordar un nuevo caso. Da clic en alguno de los botones de abajo.</div-->
+        
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-    </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPopup" id="introButton">Instrucciones</button>
+            </li>
+            <li class="nav-item">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPopup" id="caseButton">Información General del Caso</button> 
+            </li>  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Información Adicional
+              </a>
+              <ul class="dropdown-menu">
+                <li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="ipButton">Información del paciente<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li>
+                <li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="hcButton">Historia Clínica<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li>
+                <li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="efButton">Exploración física<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li>
+                <li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="acButton">Auscultación<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li>
+                <li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="lpButton">Laboratorios y otras pruebas<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li>
+                <li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="imButton">Imagen<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li>
+                <li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="tmButton">Tratamiento<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="text-center"><button type="button" class="btn btn-success">
+            <span class="h2"><i class="bi bi-trophy-fill h2"></i></span> <span class="badge text-bg-warning fs-4" id="rankCounter">100</span>
+        </button><button type="button" class="btn btn-danger" onclick="history.back()">
+          <i class="bi bi-box-arrow-right h1"></i>
+        </button></div>
+      </div>
+    </nav>
+    
     <div class="modal" id="modalPopup" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered"> 
             <div class="modal-content">
@@ -107,28 +141,10 @@
             </div>
         </div>
     </div>
-    <div id="caseButtons">
-        
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPopup" id="introButton">Instrucciones</button>
-        
-        <button type="button" class="btn btn-primary" id="caseButton">Información General del Caso</button>
-        
-        <button type="button" class="btn btn-info position-relative" data-bs-toggle="modal" data-bs-target="#modalPopup" id="ipButton">Información del paciente<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
-        
-        <button type="button" class="btn btn-info position-relative" data-bs-toggle="modal" data-bs-target="#modalPopup" id="hcButton">Historia Clínica<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
-        
-        <button type="button" class="btn btn-info position-relative" data-bs-toggle="modal" data-bs-target="#modalPopup" id="efButton">Exploración física<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
-        
-        <button type="button" class="btn btn-info position-relative" data-bs-toggle="modal" data-bs-target="#modalPopup" id="acButton">Auscultación<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
-        
-        <button type="button" class="btn btn-info position-relative" data-bs-toggle="modal" data-bs-target="#modalPopup" id="lpButton">Laboratorios y otras pruebas<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
-        
-        <button type="button" class="btn btn-info position-relative" data-bs-toggle="modal" data-bs-target="#modalPopup" id="imButton">Imagen<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
-        
-        <button type="button" class="btn btn-info position-relative" data-bs-toggle="modal" data-bs-target="#modalPopup" id="tmButton">Tratamiento<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button>
-        
-        <button type="button" class="btn btn-success" id="runButton">Ponte a Prueba</button>
-    </div>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-bottom justify-content-center" data-bs-theme="dark">
+        <button type="button" class="btn btn-success" id="runButton"><span class="h2">Ponte a Prueba</span></button>
+    </nav>
     
     <div id="infoDiv">
         <button type="button" class="btn-close btn-close-white" aria-label="Close" id="closeButton"></button>
@@ -148,15 +164,15 @@
                 </div>
             </div>
                <?php foreach ($xml->questions->children() as $question) {
-                  echo "<div class='carousel-item'>";
-                  echo "<div class='btn-group-vertical' role='group' aria-label='Options'";
-                  echo "<label>" . $question->statement . "</label>";
-                  foreach ($question->options->children() as $key => $option) {
-                      echo "<button type='button' class='btn btn-secondary'>" . $option . "</button><hr>";
-                  }
-                  echo "</div>";
-                  echo "</div>";
-              } ?>
+                   echo "<div class='carousel-item'>";
+                   echo "<div class='btn-group-vertical' role='group' aria-label='Options'";
+                   echo "<label>" . $question->statement . "</label>";
+                   foreach ($question->options->children() as $key => $option) {
+                       echo "<button type='button' class='btn btn-secondary'>" . $option . "</button><hr>";
+                   }
+                   echo "</div>";
+                   echo "</div>";
+               } ?>
           </div>
           
           <button class="carousel-control-prev" type="button" data-bs-target="#questionElement" data-bs-slide="prev" id="prevCarouselBtn">
@@ -224,13 +240,19 @@
         document.getElementById("nextCarouselBtn").addEventListener("click", nextQuestion, false);
           
         function playCase(){
+            
+            let modal = document.getElementById("myModalLabel");
+            modal.innerText = "Información general del caso";
+            
+            switchElement.hidden = true;
             let texto = <?php echo json_encode(strval($xml->description)); ?>;
             playText(texto);
-            switchElement.hidden = false;
+            
+            /*switchElement.hidden = false;
             const imageElement = document.getElementById("imgElement");
             imageElement.src = <?php echo json_encode($caseicon); ?>;
             const questionElement = document.getElementById("questionElement");
-            questionElement.hidden = true;
+            questionElement.hidden = true;*/
         }
           
         function ipCase(){

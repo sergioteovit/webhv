@@ -1,12 +1,13 @@
 body {
   background-color: #2d517d;
-  background: linear-gradient(
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+  /*background: linear-gradient(
     180deg,
     rgba(45, 81, 125, 1) 0%,
     rgba(49, 100, 148, 1) 13%,
     rgba(0, 212, 255, 1) 57%,
     rgba(0, 115, 138, 1) 100%
-  );
+  );*/
   overflow-x: hidden;
 }
 
@@ -83,7 +84,7 @@ img {
 }
 .ag-timeline_tagline {
   font-size: 40px;
-  color: rgb(255, 255, 255);
+  color: rgb(125, 125, 125);
 }
 .ag-timeline_title {
   background-repeat: no-repeat;
@@ -91,8 +92,9 @@ img {
   background-size: cover;
   -webkit-background-clip: text;
   background-clip: text;
-  color: #ff2a8c;
+  color: #222222;
   font-size: 80px;
+  text-transform: uppercase;
 }
 
 .ag-timeline_item {
@@ -153,7 +155,7 @@ img {
   height: 50px;
   line-height: 50px;
   width: 50px;
-  border: 3px solid rgb(0, 255, 238);
+  border: 5px solid #a6c0fe;
   background-color: #1d1d1b;
 
   text-align: center;
@@ -164,10 +166,11 @@ img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+  box-shadow: 10px 10px 5px #c2e9fb;
 }
 .js-ag-active .ag-timeline-card_point {
   color: #1d1d1b;
-  background-color: #ff6eb1;
+  background-color: #00f4ff;
 }
 .ag-timeline-card_meta-box {
   display: inline-block;
@@ -178,7 +181,7 @@ img {
   font-family: "ESL Legend", sans-serif;
   font-weight: bold;
   font-size: 28px;
-  color: #ffffff;
+  color: #777777;
 }
 .ag-timeline-card_item {
   display: inline-block;
@@ -195,7 +198,7 @@ img {
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
   -o-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 5px #c2e9fb;
 
   -webkit-transition:
     -webkit-transform 0.5s,

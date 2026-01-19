@@ -1,0 +1,815 @@
+{
+    "name": "Los sentidos",
+    "levels": [
+        {
+            "name": "Caso 1",
+            "complexity": "1",
+            "areas": [
+                "Anatomía",
+                "Embriología Humana",
+                "Bioquímica"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 2",
+            "complexity": "1",
+            "areas": [
+                "Anatomía",
+                "Embriología Humana",
+                "Bioquímica"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 3",
+            "complexity": "1",
+            "areas": [
+                "Anatomía",
+                "Embriología Humana",
+                "Bioquímica"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 4",
+            "complexity": "1",
+            "areas": [
+                "Anatomía",
+                "Embriología Humana",
+                "Bioquímica"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 5",
+            "complexity": "1",
+            "areas": [
+                "Anatomía",
+                "Embriología Humana",
+                "Bioquímica"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 6",
+            "complexity": "1",
+            "areas": [
+                "Anatomía",
+                "Embriología Humana",
+                "Bioquímica"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 7",
+            "complexity": "1",
+            "areas": [
+                "Anatomía",
+                "Embriología Humana",
+                "Bioquímica"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 8",
+            "complexity": "1",
+            "areas": [
+                "Anatomía",
+                "Embriología Humana",
+                "Bioquímica"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 9",
+            "complexity": "1",
+            "areas": [
+                "Anatomía",
+                "Embriología Humana",
+                "Bioquímica"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 10",
+            "complexity": "1",
+            "areas": [
+                "Anatomía",
+                "Embriología Humana",
+                "Bioquímica"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 11",
+            "complexity": "1",
+            "areas": [
+                "Anatomía",
+                "Embriología Humana",
+                "Bioquímica"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 12",
+            "complexity": "1",
+            "areas": [
+                "Anatomía",
+                "Embriología Humana",
+                "Bioquímica"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 13",
+            "complexity": "1",
+            "areas": [
+                "Anatomía",
+                "Embriología Humana",
+                "Bioquímica"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 14",
+            "complexity": "1",
+            "areas": [
+                "Anatomía",
+                "Embriología Humana",
+                "Bioquímica"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 15",
+            "complexity": "1",
+            "areas": [
+                "Anatomía",
+                "Embriología Humana",
+                "Bioquímica"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 16",
+            "complexity": "2",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 17",
+            "complexity": "2",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 18",
+            "complexity": "2",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 19",
+            "complexity": "2",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 20",
+            "complexity": "2",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 21",
+            "complexity": "2",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 22",
+            "complexity": "2",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 23",
+            "complexity": "2",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 24",
+            "complexity": "2",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 25",
+            "complexity": "2",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 26",
+            "complexity": "2",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 27",
+            "complexity": "2",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 28",
+            "complexity": "2",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 29",
+            "complexity": "2",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 30",
+            "complexity": "2",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 31",
+            "complexity": "3",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 32",
+            "complexity": "3",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 33",
+            "complexity": "3",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 34",
+            "complexity": "3",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 35",
+            "complexity": "3",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 36",
+            "complexity": "3",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 37",
+            "complexity": "3",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 38",
+            "complexity": "3",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 39",
+            "complexity": "3",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 40",
+            "complexity": "3",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 41",
+            "complexity": "3",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 42",
+            "complexity": "3",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 43",
+            "complexity": "3",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 44",
+            "complexity": "3",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 45",
+            "complexity": "3",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 46",
+            "complexity": "4",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología",
+                "Farmacología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 47",
+            "complexity": "4",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología",
+                "Farmacología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 48",
+            "complexity": "4",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología",
+                "Farmacología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 49",
+            "complexity": "4",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología",
+                "Farmacología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 50",
+            "complexity": "4",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología",
+                "Farmacología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 51",
+            "complexity": "4",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología",
+                "Farmacología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 52",
+            "complexity": "4",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología",
+                "Farmacología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 53",
+            "complexity": "4",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología",
+                "Farmacología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 54",
+            "complexity": "4",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología",
+                "Farmacología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 55",
+            "complexity": "4",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología",
+                "Farmacología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 56",
+            "complexity": "4",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología",
+                "Farmacología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 57",
+            "complexity": "4",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología",
+                "Farmacología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 58",
+            "complexity": "4",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología",
+                "Farmacología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 59",
+            "complexity": "4",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología",
+                "Farmacología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        },
+        {
+            "name": "Caso 60",
+            "complexity": "4",
+            "areas": [
+                "Biología Molecular",
+                "Biología Celular",
+                "Histología Médica",
+		        "Anatomía",
+                "Fisiología",
+                "Farmacología"
+            ],
+            "image": "",
+            "brief": "Paciente se presenta al área de consultorio...",
+            "url": "cases/"
+        }
+    ]
+}

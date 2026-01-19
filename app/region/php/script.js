@@ -32,7 +32,9 @@ $.getJSON( "json/" + document.title + ".json", function( json ) {
                     </div>
                     <div class="ag-timeline-card_info">
                       <div class="ag-timeline-card_title">`+(index+1)+`</div>
-                      <div class="ag-timeline-card_level">Nivel de Complejidad `+level.complexity+`</div>
+                      <div class="ag-timeline-card_level">
+                        <div id="star-rating-container`+index+`"></div>    
+                      </div>
                       <div class="ag-timeline-card_areas">`+level.areas+`</div>
                       <div class="ag-timeline-card_desc">`+level.brief+`</div>
                     </div>
@@ -41,7 +43,7 @@ $.getJSON( "json/" + document.title + ".json", function( json ) {
                 </div>
               </div>
       `;
-        
+      
       } else {
         
         document.getElementById("contenedor-json").innerHTML += `
@@ -66,7 +68,9 @@ $.getJSON( "json/" + document.title + ".json", function( json ) {
                     </div>
                     <div class="ag-timeline-card_info">
                       <div class="ag-timeline-card_title">`+(index+1)+`</div>
-                      <div class="ag-timeline-card_level">Nivel de Complejidad `+level.complexity+`</div>
+                      <div class="ag-timeline-card_level">
+                        <div id="star-rating-container`+index+`"></div>
+                      </div>
                       <div class="ag-timeline-card_areas">`+level.areas+`</div>
                       <div class="ag-timeline-card_desc">`+level.brief+`</div>
                     </div>
@@ -76,6 +80,8 @@ $.getJSON( "json/" + document.title + ".json", function( json ) {
               </div>
       `;
       }
+      
+      displayStars(index, level.complexity);
       
     });
   
@@ -98,6 +104,8 @@ $.getJSON( "json/" + document.title + ".json", function( json ) {
       agHeight = $(window).height(),
       f = -1,
       agFlag = false;
+      
+    
 
     function fnOnScroll() {
       agPosY = $(window).scrollTop();
@@ -149,3 +157,20 @@ $.getJSON( "json/" + document.title + ".json", function( json ) {
   });
     
  });
+
+function displayStars(index, rating, maxStars = 5) {
+        const container = document.getElementById("star-rating-container"+index);
+        container.innerHTML = "Dificultad: "; // Clear previous stars
+
+        for (let i = 1; i <= maxStars; i++) {
+            const star = document.createElement('i');
+            // Check if current star should be filled (e.g., rating is 3.5, i=1,2,3 are filled)
+            if (i <= rating) {
+                star.classList.add('bi', 'bi-star-fill', 'text-warning'); // Filled star, yellow
+            } else {
+                star.classList.add('bi', 'bi-star', 'text-muted'); // Empty star, gray
+            }
+            // For half stars, you might check if i <= rating + 0.5 and use a specific half-star icon if available, or adjust width via CSS [1].
+            container.appendChild(star);
+        }
+    }

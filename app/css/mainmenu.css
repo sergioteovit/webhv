@@ -12,13 +12,14 @@ html {
 body {
     height: 100vh;
     background: #2d517d;
-    background: linear-gradient(
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    /*background: linear-gradient(
         180deg,
         rgba(45, 81, 125, 1) 0%,
         rgba(49, 100, 148, 1) 13%,
         rgba(0, 212, 255, 1) 57%,
         rgba(0, 115, 138, 1) 100%
-    );
+    );*/
 }
 
 /* This is just to transition when you change the viewport size. */
