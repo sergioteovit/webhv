@@ -69,14 +69,68 @@
             height: 100vh; 
             
         }
+        #backgroundDiv{
+            position: absolute;
+            top: 0%; 
+            left: 50%;
+            transform: translateY(-50%);
+            transform: translateX(-50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0.8); /* The "box" for the subtitle */
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-family: sans-serif;
+            text-align: center;
+            z-index: 1;
+            pointer-events: auto;
+            width: 100%;
+            height: 100vh; 
+            
+        }
+        #patientDiv{
+            position: absolute;
+            top: 0%; 
+            left: 50%;
+            transform: translateY(-50%);
+            transform: translateX(-50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0); /* The "box" for the subtitle */
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-family: sans-serif;
+            text-align: center;
+            z-index: 10;
+            pointer-events: auto;
+            width: 100%;
+            height: 100vh; 
+            
+        }
+        #medicalDiv{
+            position: absolute;
+            top: 0%; 
+            left: 50%;
+            transform: translateY(-50%);
+            transform: translateX(-50%);
+            color: white;
+            background-color: rgba(0, 0, 0, 0); /* The "box" for the subtitle */
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-family: sans-serif;
+            text-align: center;
+            z-index: 20;
+            pointer-events: auto;
+            width: 100%;
+            height: 100vh; 
+        }
     </style>
 </head>
 
 <body>
       
     <?php
-    $filecase = "sistemas/" . $system . "/" . $url . ".xml";
-    $caseicon = "sistemas/images/" . $url . ".jpg";
+    $dirbase = "sistemas/" . $system . "/" . $url . "/";
+    $filecase = $dirbase . "case.xml";
+    $caseicon = $dirbase . "case.jpg";
 
     $xml = simplexml_load_file($filecase);
 
@@ -87,8 +141,6 @@
     ?>
     <nav class="navbar fixed-top bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
       <div class="container-fluid">
-        <!--div class="bg-dark text-white fw-semibold text-center">Vamos a abordar un nuevo caso. Da clic en alguno de los botones de abajo.</div-->
-        
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -97,20 +149,20 @@
             <li class="nav-item">
               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPopup" id="introButton">Instrucciones</button>
             </li>
-            <li class="nav-item">
+            <!--li class="nav-item">
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPopup" id="caseButton">Información General del Caso</button> 
-            </li>  
+            </li-->  
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Información Adicional
               </a>
               <ul class="dropdown-menu">
-                <li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="ipButton">Información del paciente<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li>
-                <li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="hcButton">Historia Clínica<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li>
-                <li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="efButton">Exploración física<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li>
+                <!--li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="ipButton">Información del paciente<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li-->
+                <!--li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="hcButton">Historia Clínica<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li-->
+                <!--li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="efButton">Exploración física<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li-->
                 <li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="acButton">Auscultación<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li>
-                <li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="lpButton">Laboratorios y otras pruebas<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li>
-                <li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="imButton">Imagen<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li>
+                <!--li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="lpButton">Laboratorios y otras pruebas<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li-->
+                <!--li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="imButton">Imagen<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li-->
                 <li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="tmButton">Tratamiento<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li>
               </ul>
             </li>
@@ -146,6 +198,34 @@
         <button type="button" class="btn btn-success" id="runButton"><span class="h2">Ponte a Prueba</span></button>
     </nav>
     
+    <div id="backgroundDiv">
+        <img src="images/background.png" class="img-fluid"/>
+    </div>
+    <div id="patientDiv">
+        <?php
+            $imageatt = $xml->patient->attributes();
+            $imageurl = $dirbase . $imageatt["image"];
+            if ( empty($imageatt["image"]) ) 
+                $imageurl = "images/patient.png";
+                
+            echo "<img src='" . $imageurl ."' class='img-fluid'/>";
+        ?>
+    </div>
+    <div id="medicalDiv">
+        <img src="images/desktop.png" class="img-fluid" usemap="#image-map"/>
+        <map name="image-map">
+            <area id="tel-area" coords="94,554,92,916,191,919,374,812,366,549,220,558" shape="poly" href="javascript:void(0);" alt="Telephone" data-bs-toggle="modal" data-bs-target="#modalPopup">
+            <area id="screen-area" target="_self" alt="Screen" title="Screen" href="javascript:void(0);" coords="432,444,437,849,847,775,847,456" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
+            <area id="keyboard-area" target="_self" alt="Keyboard" title="Keyboard" href="javascript:void(0);"  coords="640,924,603,975,1110,975,1088,924" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
+            <area id="note-area" target="_self" alt="Note" title="Note" href="javascript:void(0);"  coords="1073,851,1100,926,1303,926,1244,853" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
+            <area id="print-area" target="_self" alt="Print" title="Print" href="javascript:void(0);"  coords="1303,802,1300,907,1358,966,1415,968,1436,988,1727,988,1690,965,1690,944,1709,946,1709,861,1688,848,1602,804" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
+            <area id="mouse-area" target="_self" alt="Mouse" title="Mouse" href="javascript:void(0);" coords="1130,949,1147,970,1188,971,1193,938,1163,927,1134,932" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
+            <area id="patient-area" target="_self" alt="Patient" title="Patient" href="#" coords="1005,844,1234,846,1229,476,1000,471" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
+            <area id="tallimeter-area" target="_self" alt="Tallimeter" title="Tallimeter" href="#" coords="1388,834,1397,453,1348,432,1344,371,1509,376,1509,437,1453,456,1458,834" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
+            <area id="negatoscope-area" target="_self" alt="Negatoscope" title="Negatoscope" href="#" coords="1578,249,1578,414,1914,414,1911,256" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
+        </map>
+    </div>
+    
     <div id="infoDiv">
         <button type="button" class="btn-close btn-close-white" aria-label="Close" id="closeButton"></button>
         <br/>
@@ -158,7 +238,6 @@
           <div class="carousel-inner">
               
             <div class="carousel-item active">
-              <!--img src="..." class="d-block w-100" alt="..."-->
                 <div class="mb-3" >
                   <label class="form-label">Da clic en las flechas para continuar con las interaciones.</label>
                 </div>
@@ -201,7 +280,7 @@
         }
     </script>
     
-    <script type="module" src="./js/avatar.js"></script>
+    <!--script type="module" src="./js/avatar.js"></!--script-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
@@ -223,22 +302,68 @@
             });
         countdownBar.stop();
           
-        document.getElementById("caseButton").addEventListener("click", playCase, false);
+        // document.getElementById("caseButton").addEventListener("click", playCase, false);
         document.getElementById("introButton").addEventListener("click", instructions, false);
           
-        document.getElementById("ipButton").addEventListener("click", ipCase, false);
-        document.getElementById("hcButton").addEventListener("click", hcCase, false);
-        document.getElementById("efButton").addEventListener("click", efCase, false);
+        // document.getElementById("ipButton").addEventListener("click", ipCase, false);
+        // document.getElementById("hcButton").addEventListener("click", hcCase, false);
+        // document.getElementById("efButton").addEventListener("click", efCase, false);
         document.getElementById("acButton").addEventListener("click", acCase, false);
-        document.getElementById("lpButton").addEventListener("click", lpCase, false);
-        document.getElementById("imButton").addEventListener("click", imCase, false);
+        // document.getElementById("lpButton").addEventListener("click", lpCase, false);
+        // document.getElementById("imButton").addEventListener("click", imCase, false);
         document.getElementById("tmButton").addEventListener("click", tmCase, false);
         document.getElementById("runButton").addEventListener("click", runCase, false);
         document.getElementById("closeButton").addEventListener("click", closeTest, false);
           
         document.getElementById("prevCarouselBtn").addEventListener("click", prevQuestion, false);
         document.getElementById("nextCarouselBtn").addEventListener("click", nextQuestion, false);
-          
+        
+        document.getElementById("tel-area").addEventListener("click", telephoneClicked, false);
+        document.getElementById("screen-area").addEventListener("click", pcClicked, false);
+        document.getElementById("keyboard-area").addEventListener("click", pcClicked, false);
+        document.getElementById("mouse-area").addEventListener("click", pcClicked, false);
+        document.getElementById("note-area").addEventListener("click", noteaudioClicked, false);
+        document.getElementById("print-area").addEventListener("click", printaudioClicked, false);
+        document.getElementById("patient-area").addEventListener("click", patientClicked, false);
+        document.getElementById("negatoscope-area").addEventListener("click", negatoscopeClicked, false);
+        document.getElementById("tallimeter-area").addEventListener("click", tallimeterClicked, false);
+        
+        const telaudio = new Audio('audio/telephone.mp3');
+        const pcaudio = new Audio('audio/click.mp3');
+        const noteaudio = new Audio('audio/note.mp3');
+        const printaudio = new Audio('audio/print.mp3');
+        const patientaudio = new Audio('audio/patient.mp3');
+        
+        function telephoneClicked(){
+            telaudio.play();
+        }
+        function pcClicked(){
+            pcaudio.play();
+            hcCase();
+        }
+        function noteaudioClicked(){
+            noteaudio.play();
+            playCase();
+        }
+        function printaudioClicked(){
+            printaudio.play();
+            lpCase();
+        }
+        function patientClicked(){
+            patientaudio.play();
+            efCase();
+        }
+        
+        function negatoscopeClicked(){
+            noteaudio.play();
+            imCase();
+        }
+        
+        function tallimeterClicked(){
+            patientaudio.play();
+            ipCase();
+        }
+        
         function playCase(){
             
             let modal = document.getElementById("myModalLabel");
@@ -248,11 +373,6 @@
             let texto = <?php echo json_encode(strval($xml->description)); ?>;
             playText(texto);
             
-            /*switchElement.hidden = false;
-            const imageElement = document.getElementById("imgElement");
-            imageElement.src = <?php echo json_encode($caseicon); ?>;
-            const questionElement = document.getElementById("questionElement");
-            questionElement.hidden = true;*/
         }
           
         function ipCase(){
@@ -281,11 +401,10 @@
             
             let modal = document.getElementById("myModalLabel");
             modal.innerText = "Exploración física";
-            
             switchElement.hidden = true;
             if (!checkPoints()) return;
             let texto = <?php echo json_encode(strval($xml->examination)); ?>;
-            playText(texto);
+            playPatientText(texto);
         }
 
         function acCase(){
@@ -358,7 +477,7 @@
             modal.innerText = "Instrucciones";
             
             let texto =
-                "Para comenzar, puedes dar clic en el botón Información General del Caso para escuchar la descripción. Posteriormente podrás solicitarme datos más detallados. Cada vez que consultes información, gastarás puntos, por lo que elige bien los datos a consultar. Una vez estudiado el caso, da clic en el botón Ponte a Prueba, para resolver los cuestionamientos y ganar puntos, que se sumarán a tu ranking.";
+                "Para comenzar, da clic en las notas sobre tu escritorio, para revisar la información general del caso. Posteriormente da clic en el paciente para escuchar su padecimiento. Podrás hacer uso de tus créditos iniciales dando clic en el teléfono para solicitarme ayuda. Una vez estudiado el caso, da clic en el botón Ponte a Prueba, para resolver los cuestionamientos y ganar puntos, que se sumarán a tu ranking.";
 
             playText(texto);
         }
@@ -379,6 +498,11 @@
             modal.innerHTML = texto;
 
             window.speechSynthesis.speak(mensaje);
+        }
+        
+        function playPatientText(texto, generoPreferido = 'female'){
+            let modal = document.getElementById("myModalBody");
+            modal.innerHTML = texto;
         }
           
         function deductPoints(){

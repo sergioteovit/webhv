@@ -5,7 +5,7 @@ $.getJSON( "json/" + document.title + ".json", function( json ) {
       
       var iconfilename = "images/caso.png";
       if ( level.image.length != 0 ) 
-        iconfilename = "cases/sistemas/images/" + level.image + ".jpg";
+        iconfilename = "cases/sistemas/" + level.image;
       
       if ( (index+1) % 2 != 0 ){
         

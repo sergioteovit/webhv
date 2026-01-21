@@ -1,11 +1,11 @@
-<case title="Caso" group="XX a YY" illness="Padecimiento" subject="" system="">
+<case title="Caso" group="XX a YY" illness="Padecimiento" subject="" system="Respiratorio">
     <intro title="Introducción">
-        Paciente femenina de 65 años de edad acude al consultorio por un dolor en el pecho, presenta sudoración, vómito y debilidad.
+        Paciente masculino de 55 años, con antecedentes de tabaquismo, acude al consultorio por tos seca, dolor muscular, dolor de pecho, fiebre y falta de aire.
     </intro>
     <description title="Descripción del caso">
         Aquí colocar la descripción del caso 
     </description>
-    <patient title="Información del paciente" gender="" age="">Paciente ... de ... años</patient>
+    <patient title="Información del paciente" gender="" age="" image="">Paciente ... de ... años</patient>
     <history title="Historia Clínica"> Historia clínica
     </history>
     <examination title="Exploración física"> Exploración física

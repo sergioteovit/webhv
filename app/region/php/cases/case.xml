@@ -5,7 +5,7 @@
     <description title="Descripción del caso">
         Aquí colocar la descripción del caso 
     </description>
-    <patient title="Información del paciente" gender="" age="">Paciente ... de ... años</patient>
+    <patient title="Información del paciente" gender="" age="" image="">Paciente ... de ... años</patient>
     <history title="Historia Clínica"> Historia clínica
     </history>
     <examination title="Exploración física"> Exploración física

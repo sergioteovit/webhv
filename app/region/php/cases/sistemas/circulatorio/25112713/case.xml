@@ -1,11 +1,11 @@
-<case title="Caso" group="25 a 44" illness="Gastritis" subject="Anatomía" system="Digestivo">
+<case title="Caso" group="XX a YY" illness="Padecimiento" subject="" system="">
     <intro title="Introducción">
-        Paciente masculino de 40 años de edad asiste a consulta por dolor punzante y ardor en la parte superior del abdomen que se irradia hacia la espalda.
+        Paciente femenina de 65 años de edad acude al consultorio por un dolor en el pecho, presenta sudoración, vómito y debilidad.
     </intro>
     <description title="Descripción del caso">
-        Paciente masculino de 40 años de edad asiste a consulta por dolor punzante y ardor en la parte superior del abdomen que se irradia hacia la espalda. Refiere sensación de llenado e hinchazón del abdomen y pérdida del apetito, el dolor se agrava con comidas condimentadas e ingestión de bebidas alcohólicas. Presenta agruras y flatulencia. El malestar es de reciente aparición con una evolución de 2 semanas. 
+        Aquí colocar la descripción del caso 
     </description>
-    <patient title="Información del paciente" gender="Masculino" age="40">Paciente Masculino de 40 años</patient>
+    <patient title="Información del paciente" gender="" age="" image="">Paciente ... de ... años</patient>
     <history title="Historia Clínica"> Historia clínica
     </history>
     <examination title="Exploración física"> Exploración física

@@ -1,0 +1,39 @@
+<case title="Caso" group="25 a 44" illness="Gastritis" subject="Anatomía" system="Digestivo">
+    <intro title="Introducción">
+        Paciente masculino de 40 años acude a consulta por dolor punzante y ardor en la parte superior del abdomen.  
+    </intro>
+    <description title="Descripción del caso">
+        Paciente masculino de 40 años, acude a consulta por dolor punzante y ardor en la parte superior del abdomen, que se irradia hacia la espalda. Refiere sensación de llenado e hinchazón del abdomen y pérdida del apetito, el dolor se agrava con comidas condimentadas e ingestión de bebidas alcohólicas. Presenta agruras y flatulencia. El malestar comenzó hace dos semanas, sin embargo se ha incrementado recientemente. Dolor mayor en región abdominal, específicamente en el Epigastrio. Se sospecha de gastritis.
+    </description>
+    <patient title="Información del paciente" gender="Masculino" age="40" image="patient.png">El paciente tiene 40 años</patient>
+    <history title="Historia Clínica"> El paciente no cuenta con historia clínica registrada en esta unidad.
+    </history>
+    <examination title="Exploración física"> Siento un dolor punzante en esta parte del estómago.
+    </examination>
+    <auscultation title="Auscultación"> ¿En verdad quieres auscultar al paciente?
+    </auscultation>
+    <tests title="Laboratorios y otras pruebas"> No cuentas con esta información.
+    </tests>
+    <images title="Imágenes"> No cuentas con estudios de imagen.
+    </images>
+    <treatment title="Tratamiento"> Se sospecha de gastritis. Aún no se ha definido un tratamiento.
+    </treatment>
+    <questions title="Preguntas">
+        <question title="Pregunta">
+            <statement title="Sentencia">¿Cuál es el diagnóstico más probable?</statement>
+            <options title="Opciones">
+                <option title="Opción" name="A">A</option>
+                <option title="Opción" name="B">B</option>
+                <option title="Opción" name="C">C</option>
+                <option title="Opción" name="D">D</option>
+            </options>
+            <reasoning title="Razonamientos">
+                <option title="Opción" name="A">Razonamiento A</option>
+                <option title="Opción" name="B">Razonamiento B</option>
+                <option title="Opción" name="C">Razonamiento C</option>
+                <option title="Opción" name="D">Razonamiento D</option>
+            </reasoning>
+            <answer title="Respuesta">A</answer>
+        </question>
+    </questions>
+</case>
