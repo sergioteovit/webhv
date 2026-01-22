@@ -139,40 +139,15 @@
         exit();
     }
     ?>
+    
     <nav class="navbar fixed-top bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
       <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button type="button" class="btn btn-danger" onclick="history.back()">
+            <i class="bi bi-box-arrow-left h1"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPopup" id="introButton">Instrucciones</button>
-            </li>
-            <!--li class="nav-item">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPopup" id="caseButton">Información General del Caso</button> 
-            </li-->  
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Información Adicional
-              </a>
-              <ul class="dropdown-menu">
-                <!--li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="ipButton">Información del paciente<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li-->
-                <!--li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="hcButton">Historia Clínica<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li-->
-                <!--li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="efButton">Exploración física<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li-->
-                <li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="acButton">Auscultación<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li>
-                <!--li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="lpButton">Laboratorios y otras pruebas<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li-->
-                <!--li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="imButton">Imagen<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li-->
-                <li><button type="button" class="btn btn-info position-relative dropdown-item" data-bs-toggle="modal" data-bs-target="#modalPopup" id="tmButton">Tratamiento<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-10</span></button></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div class="text-center"><button type="button" class="btn btn-success">
+        <button type="button" class="btn btn-success">
             <span class="h2"><i class="bi bi-trophy-fill h2"></i></span> <span class="badge text-bg-warning fs-4" id="rankCounter">100</span>
-        </button><button type="button" class="btn btn-danger" onclick="history.back()">
-          <i class="bi bi-box-arrow-right h1"></i>
-        </button></div>
+        </button>
       </div>
     </nav>
     
@@ -218,11 +193,13 @@
             <area id="screen-area" target="_self" alt="Screen" title="Screen" href="javascript:void(0);" coords="432,444,437,849,847,775,847,456" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
             <area id="keyboard-area" target="_self" alt="Keyboard" title="Keyboard" href="javascript:void(0);"  coords="640,924,603,975,1110,975,1088,924" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
             <area id="note-area" target="_self" alt="Note" title="Note" href="javascript:void(0);"  coords="1073,851,1100,926,1303,926,1244,853" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
-            <area id="print-area" target="_self" alt="Print" title="Print" href="javascript:void(0);"  coords="1303,802,1300,907,1358,966,1415,968,1436,988,1727,988,1690,965,1690,944,1709,946,1709,861,1688,848,1602,804" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
+            <area id="print-area" target="_self" alt="Print" title="Print" href="javascript:void(0);"  coords="1300,807,1302,907,1356,966,1420,975,1443,992,1733,990,1690,963,1711,944,1707,868,1373,882" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
             <area id="mouse-area" target="_self" alt="Mouse" title="Mouse" href="javascript:void(0);" coords="1130,949,1147,970,1188,971,1193,938,1163,927,1134,932" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
-            <area id="patient-area" target="_self" alt="Patient" title="Patient" href="#" coords="1005,844,1234,846,1229,476,1000,471" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
-            <area id="tallimeter-area" target="_self" alt="Tallimeter" title="Tallimeter" href="#" coords="1388,834,1397,453,1348,432,1344,371,1509,376,1509,437,1453,456,1458,834" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
-            <area id="negatoscope-area" target="_self" alt="Negatoscope" title="Negatoscope" href="#" coords="1578,249,1578,414,1914,414,1911,256" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
+            <area id="patient-area" target="_self" alt="Patient" title="Patient" href="javascript:void(0);" coords="1005,844,1234,846,1229,476,1000,471" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
+            <area id="tallimeter-area" target="_self" alt="Tallimeter" title="Tallimeter" href="javascript:void(0);" coords="1388,834,1397,453,1348,432,1344,371,1509,376,1509,437,1453,456,1458,834" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
+            <area id="negatoscope-area" target="_self" alt="Negatoscope" title="Negatoscope" href="javascript:void(0);" coords="1578,249,1578,414,1914,414,1911,256" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
+            <area id="stetoscope-area" target="_self" alt="Estetoscopio" title="Estetoscopio" href="javascript:void(0);" coords="820,868,786,887,779,907,796,917,820,916,844,894,871,890,905,902,940,909,993,919,1030,919,1041,888,993,877,964,853,864,853" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
+            <area id="prescription-area" target="_self" alt="prescription" title="prescription" href="javascript:void(0);" coords="1356,809,1414,875,1658,866,1568,800" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
         </map>
     </div>
     
@@ -303,15 +280,15 @@
         countdownBar.stop();
           
         // document.getElementById("caseButton").addEventListener("click", playCase, false);
-        document.getElementById("introButton").addEventListener("click", instructions, false);
+        // document.getElementById("introButton").addEventListener("click", instructions, false);
           
         // document.getElementById("ipButton").addEventListener("click", ipCase, false);
         // document.getElementById("hcButton").addEventListener("click", hcCase, false);
         // document.getElementById("efButton").addEventListener("click", efCase, false);
-        document.getElementById("acButton").addEventListener("click", acCase, false);
+        // document.getElementById("acButton").addEventListener("click", acCase, false);
         // document.getElementById("lpButton").addEventListener("click", lpCase, false);
         // document.getElementById("imButton").addEventListener("click", imCase, false);
-        document.getElementById("tmButton").addEventListener("click", tmCase, false);
+        // document.getElementById("tmButton").addEventListener("click", tmCase, false);
         document.getElementById("runButton").addEventListener("click", runCase, false);
         document.getElementById("closeButton").addEventListener("click", closeTest, false);
           
@@ -327,15 +304,19 @@
         document.getElementById("patient-area").addEventListener("click", patientClicked, false);
         document.getElementById("negatoscope-area").addEventListener("click", negatoscopeClicked, false);
         document.getElementById("tallimeter-area").addEventListener("click", tallimeterClicked, false);
+        document.getElementById("stetoscope-area").addEventListener("click", stetoscopeClicked, false);
+        document.getElementById("prescription-area").addEventListener("click", prescriptionClicked, false);
         
         const telaudio = new Audio('audio/telephone.mp3');
         const pcaudio = new Audio('audio/click.mp3');
         const noteaudio = new Audio('audio/note.mp3');
         const printaudio = new Audio('audio/print.mp3');
         const patientaudio = new Audio('audio/patient.mp3');
+        const heartaudio = new Audio('audio/heartbeat.mp3');
         
         function telephoneClicked(){
             telaudio.play();
+            instructions();
         }
         function pcClicked(){
             pcaudio.play();
@@ -362,6 +343,16 @@
         function tallimeterClicked(){
             patientaudio.play();
             ipCase();
+        }
+        
+        function stetoscopeClicked(){
+            heartaudio.play();
+            acCase();
+        }
+        
+        function prescriptionClicked(){
+            noteaudio.play();
+            tmCase();
         }
         
         function playCase(){

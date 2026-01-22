@@ -19,6 +19,13 @@
   </head>
 
   <body>
+    <nav class="navbar fixed-top bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <button type="button" class="btn btn-danger" onclick="history.back()">
+            <i class="bi bi-box-arrow-left h1"></i>
+        </button>
+      </div>
+    </nav>
     <div class="ag-timeline-block">
       <div class="ag-timeline_title-box">
         <div class="ag-timeline_title" id="system_title"></div>
