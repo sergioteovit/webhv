@@ -18,6 +18,11 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="fonts/MsMadi-Regular.ttf" rel="stylesheet">
+    
     <style>
         #subtitle-container {
             position: absolute;
@@ -122,6 +127,20 @@
             width: 100%;
             height: 100vh; 
         }
+        
+        @font-face {
+            font-family: "Manuscript"; 
+            src: url("fonts/MsMadi-Regular.ttf") format("truetype");
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        .ms-madi-regular {
+              font-family: "Manuscript", cursive;
+              font-weight: 400;
+              font-style: normal;
+              font-size: 1.5rem;
+        }
     </style>
 </head>
 
@@ -138,6 +157,13 @@
         echo "Estamos trabajando en este caso. Perdona el inconveniente.<br>";
         exit();
     }
+    
+    $notes = "<ul class='list-unstyled'>";
+    foreach ($xml->description->children() as $note) { 
+        $notes = $notes . "<li><i class='bi bi-check2'></i> " .  $note . "<br/></li>";
+    }
+    $notes = $notes . "</ul>";
+    
     ?>
     
     <nav class="navbar fixed-top bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
@@ -155,11 +181,16 @@
         <div class="modal-dialog modal-dialog-centered"> 
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="myModalLabel">Modal title</h5>
+                <h5 class="modal-title" id="myModalLabel">Title</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-body" id="myModalBody">
-                This is a vertically centered modal.
+              <div class="modal-body row">
+                <div class="col-md-3">
+                  <img src="images/notes.png" class="img-fluid rounded" id="modalimage">
+                </div>
+                <div class="col" id="myModalBody" >
+                  Contenido central
+                </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -169,8 +200,25 @@
         </div>
     </div>
     
+    <div class="modal fade bd-example-modal-xl" id="modalBig" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content" >
+          <div class="modal-header">
+                <h5 class="modal-title" id="modalPLabel">Title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body row" id="modalPatient">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+        </div>
+      </div>
+    </div>
+    
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-bottom justify-content-center" data-bs-theme="dark">
-        <button type="button" class="btn btn-success" id="runButton"><span class="h2">Ponte a Prueba</span></button>
+        <button type="button" class="btn btn-success" id="runButton"><span class="h2">Prueba tu razonamiento clínico</span></button>
     </nav>
     
     <div id="backgroundDiv">
@@ -195,7 +243,7 @@
             <area id="note-area" target="_self" alt="Note" title="Note" href="javascript:void(0);"  coords="1073,851,1100,926,1303,926,1244,853" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
             <area id="print-area" target="_self" alt="Print" title="Print" href="javascript:void(0);"  coords="1300,807,1302,907,1356,966,1420,975,1443,992,1733,990,1690,963,1711,944,1707,868,1373,882" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
             <area id="mouse-area" target="_self" alt="Mouse" title="Mouse" href="javascript:void(0);" coords="1130,949,1147,970,1188,971,1193,938,1163,927,1134,932" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
-            <area id="patient-area" target="_self" alt="Patient" title="Patient" href="javascript:void(0);" coords="1005,844,1234,846,1229,476,1000,471" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
+            <area id="patient-area" target="_self" alt="Patient" title="Patient" href="javascript:void(0);" coords="1005,844,1234,846,1229,476,1000,471" shape="poly" data-bs-toggle="modal" data-bs-target="#modalBig">
             <area id="tallimeter-area" target="_self" alt="Tallimeter" title="Tallimeter" href="javascript:void(0);" coords="1388,834,1397,453,1348,432,1344,371,1509,376,1509,437,1453,456,1458,834" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
             <area id="negatoscope-area" target="_self" alt="Negatoscope" title="Negatoscope" href="javascript:void(0);" coords="1578,249,1578,414,1914,414,1911,256" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
             <area id="stetoscope-area" target="_self" alt="Estetoscopio" title="Estetoscopio" href="javascript:void(0);" coords="820,868,786,887,779,907,796,917,820,916,844,894,871,890,905,902,940,909,993,919,1030,919,1041,888,993,877,964,853,864,853" shape="poly" data-bs-toggle="modal" data-bs-target="#modalPopup">
@@ -278,17 +326,7 @@
               onFinish  : function () { alert("Se agotó el tiempo :'/ "); }
             });
         countdownBar.stop();
-          
-        // document.getElementById("caseButton").addEventListener("click", playCase, false);
-        // document.getElementById("introButton").addEventListener("click", instructions, false);
-          
-        // document.getElementById("ipButton").addEventListener("click", ipCase, false);
-        // document.getElementById("hcButton").addEventListener("click", hcCase, false);
-        // document.getElementById("efButton").addEventListener("click", efCase, false);
-        // document.getElementById("acButton").addEventListener("click", acCase, false);
-        // document.getElementById("lpButton").addEventListener("click", lpCase, false);
-        // document.getElementById("imButton").addEventListener("click", imCase, false);
-        // document.getElementById("tmButton").addEventListener("click", tmCase, false);
+        
         document.getElementById("runButton").addEventListener("click", runCase, false);
         document.getElementById("closeButton").addEventListener("click", closeTest, false);
           
@@ -316,7 +354,7 @@
         
         function telephoneClicked(){
             telaudio.play();
-            instructions();
+            intro();
         }
         function pcClicked(){
             pcaudio.play();
@@ -324,7 +362,7 @@
         }
         function noteaudioClicked(){
             noteaudio.play();
-            playCase();
+            playNote();
         }
         function printaudioClicked(){
             printaudio.play();
@@ -355,15 +393,26 @@
             tmCase();
         }
         
-        function playCase(){
+        function playNote(){
             
             let modal = document.getElementById("myModalLabel");
-            modal.innerText = "Información general del caso";
+            modal.innerText = "Notas sobre el padecimiento";
             
             switchElement.hidden = true;
-            let texto = <?php echo json_encode(strval($xml->description)); ?>;
+            
+            let texto = <?php echo json_encode(strval($notes)); ?>;
             playText(texto);
             
+        }
+        
+        function intro(){
+            let modal = document.getElementById("myModalLabel");
+            modal.innerText = "Mensaje";
+            
+            switchElement.hidden = true;
+            if (!checkPoints()) return;
+            let texto = <?php echo json_encode(strval($xml->intro)); ?>;
+            playText(texto);
         }
           
         function ipCase(){
@@ -474,6 +523,9 @@
         }
           
         function insufficientPoints(){
+            let modal = document.getElementById("myModalLabel");
+            modal.innerText = "Puntos agotados";
+            
             playText("Tus puntos se han agotado, da clic en Ponte a Prueba o reinicia el caso.");
         }
 
@@ -492,7 +544,7 @@
         }
         
         function playPatientText(texto, generoPreferido = 'female'){
-            let modal = document.getElementById("myModalBody");
+            let modal = document.getElementById("modalPatient");
             modal.innerHTML = texto;
         }
           

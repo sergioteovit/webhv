@@ -1,23 +1,45 @@
 <case title="Caso" group="25 a 44" illness="Gastritis" subject="Anatomía" system="Digestivo">
+    <environment title="Entorno" type="GeneralConsultory">
+    </environment>
     <intro title="Introducción">
-        Paciente masculino de 40 años acude a consulta por dolor punzante y ardor en la parte superior del abdomen.  
+        Llega este paciente de 40 años, te dejé algunas notas en el escritorio.  
     </intro>
     <description title="Descripción del caso">
-        Paciente masculino de 40 años, acude a consulta por dolor punzante y ardor en la parte superior del abdomen, que se irradia hacia la espalda. Refiere sensación de llenado e hinchazón del abdomen y pérdida del apetito, el dolor se agrava con comidas condimentadas e ingestión de bebidas alcohólicas. Presenta agruras y flatulencia. El malestar comenzó hace dos semanas, sin embargo se ha incrementado recientemente. Dolor mayor en región abdominal, específicamente en el Epigastrio. Se sospecha de gastritis.
+        <note>Siente dolor punzante y le arde la parte superior del abdomen.</note>
+        <note>El dolor se va hacia la espalda.</note>
+        <note>Sensación de llenado e hinchazón del abdomen.</note>
+        <note>Pérdida del apetito.</note>
+        <note>El dolor se agrava con comidas condimentadas e ingestión de bebidas alcohólicas.</note>
+        <note>Agruras y flatulencia.</note>
+        <note>El malestar comenzó hace dos semanas y ha ido en incremento.</note>
+        <note>Dolor mayor en región abdominal, en la región del Epigastrio.</note>
+        <note>Sospecho de gastritis.</note>
+        <note>Deberías explorar la región del dolor.</note>
     </description>
-    <patient title="Información del paciente" gender="Masculino" age="40" image="patient.png">El paciente tiene 40 años</patient>
-    <history title="Historia Clínica"> El paciente no cuenta con historia clínica registrada en esta unidad.
+    <patient title="Información del paciente" gender="Masculino" age="40" image="patient.png">
+        <age>Tengo 40 años.</age>
+        <pain>Me duele esta parte del estómago.</pain>
+    </patient>
+    <history title="Historia Clínica"> Este paciente no tiene registros de atención previa en esta unidad.
     </history>
-    <examination title="Exploración física"> Siento un dolor punzante en esta parte del estómago.
+    <examination title="Exploración física"> ¿Quieres comenzar la exploración?
     </examination>
-    <auscultation title="Auscultación"> ¿En verdad quieres auscultar al paciente?
+    <auscultation title="Auscultación"> ¿Quieres comenzar la auscultación?
     </auscultation>
-    <tests title="Laboratorios y otras pruebas"> No cuentas con esta información.
+    <tests title="Laboratorios y otras pruebas"> ¿Qué estudios de laboratorio quieres realizar?
     </tests>
-    <images title="Imágenes"> No cuentas con estudios de imagen.
+    <images title="Imágenes"> ¿Qué tipo de imágenes quieres obtener?
     </images>
-    <treatment title="Tratamiento"> Se sospecha de gastritis. Aún no se ha definido un tratamiento.
+    <treatment title="Tratamiento"> ¿Qué tratamiento quieres indicar?
     </treatment>
+    <interactions>
+        <interaction type="question">
+        </interaction>
+        <interaction type="selection">
+        </interaction>
+        <interaction type="ai">
+        </interaction>
+    </interactions>
     <questions title="Preguntas">
         <question title="Pregunta">
             <statement title="Sentencia">¿Cuál es el diagnóstico más probable?</statement>

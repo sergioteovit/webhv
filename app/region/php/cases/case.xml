@@ -18,9 +18,17 @@
     </images>
     <treatment title="Tratamiento"> Tratamiento
     </treatment>
+    <interactions>
+        <interaction type="question">
+        </interaction>
+        <interaction type="selection">
+        </interaction>
+        <interaction type="ai">
+        </interaction>
+    </interactions>
     <questions title="Preguntas">
         <question title="Pregunta">
-            <statement title="Sentencia">¿Cuál es el diagnóstico más probable?</statement>
+            <statement title="Sentencia">Pregunta</statement>
             <options title="Opciones">
                 <option title="Opción" name="A">A</option>
                 <option title="Opción" name="B">B</option>
